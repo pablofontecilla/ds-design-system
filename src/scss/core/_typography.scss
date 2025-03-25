@@ -1,0 +1,87 @@
+@use '_colors';
+@use 'variables';
+
+body    {
+    font-size: .8rem;
+    font-family: "Lato Regular";
+    color: colors.$white;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Roboto;
+}
+
+h1 {
+    font-size: 1rem;
+    font-family: 'Roboto Light';
+    margin: 0;
+}
+
+h2 {
+    font-size: 1rem;
+    opacity: variables.$op-default;
+}
+
+h4 {
+    font-size: .9rem;
+}
+
+a.active {
+    button {
+       color: colors.$strong-blue; 
+    }
+
+}
+
+p, span, li {
+    font-size: 1rem;
+    font-family: 'Roboto Light';
+    margin: 10px 0;
+    
+}
+
+.small {
+    font-size: .7rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.text-op60 {
+    opacity: variables.$op-60;
+}
+
+.text-op75 {
+    opacity: variables.$op-default;
+}
+
+.text-op80 {
+    opacity: variables.$op-80;
+}
+
+.text-op85 {
+    opacity: variables.$op-85;
+}
+
+.emphasis {
+    font-size:3rem;
+    font-weight: 700;
+    color: rgba(colors.$ds-blue, .5);
+}
+
+.content {
+        padding: 50px;
+        width: 100%;
+        line-height: 1.5rem;
+        margin: 30px 0;
+        height: calc(100% - 30px);
+        display: flex;
+        justify-content: center;
+
+    flex-direction: column;
+}

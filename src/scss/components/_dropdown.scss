@@ -1,0 +1,90 @@
+@use '../core/colors';
+@use '../core/variables';
+
+.ds-dropdown__ctn {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+
+    .hamburger {
+        display: none;
+    }
+
+    .testdropdown {
+        background-color: rgba(colors.$white, .05);
+        position: absolute;
+        padding: 5px;
+        top: 0;
+        left: 64px;
+    }
+}
+
+.mobile {
+    .ds-dropdown__ctn {
+        // background-color: red;
+
+        .is-mobile {
+            display: none;
+        }
+    }
+
+    .portfolio-ctn {
+        width: calc(100% - 4px);
+
+        .portfolio-intro {
+            p {
+                display: none;
+            }
+        }
+
+        ul {
+            padding: 10px;
+        }
+    }
+    .btn-next, .btn-previous {
+        top: 58px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .ds-dropdown {
+        display: block;
+        box-shadow: variables.$ds-box-shadow;
+    }
+}
+
+.ds-dropdown {
+    display: flex;
+    background-color: colors.$ds-d-bg-blue06;
+
+    .ds-dropdown__label {
+        display: flex;
+        height: 28px;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 20px;
+
+        &:hover {
+            background-color: rgba(colors.$white, .05);
+            color: colors.$ds-blue-light;
+        }
+    }
+
+    .ds-dropdown__list {
+
+        width: 100%;
+        margin-bottom: 0;
+
+        button {
+            width: 100%;
+            font-size: .8rem;
+        }
+
+        a {
+            display: block;
+        }
+        
+    }
+}

@@ -1,0 +1,68 @@
+@use '../../scss/core/colors';
+@use '../../scss/core/variables';
+
+@mixin header {
+  // background-color: rgba(colors.$black, .1);
+  background-color: colors.$gray-dark-d-10;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: fixed;
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+.ds-header {
+  @include header;
+  border-bottom: 1px solid rgba(colors.$white, .04);
+
+  .brand {
+    letter-spacing: 4px;
+    white-space: nowrap;
+    margin: 0 60px 0 30px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center
+  }
+}
+
+.ds-footer {
+  @include header;
+  bottom: 0;
+  border-top: 1px solid rgba(colors.$white, .04);
+}
+
+.ds-main-ctn {
+  box-sizing: border-box;
+  margin: 36px 0 36px 48px;
+  display: flex;
+  height: 100%;
+
+  .ds-main {
+    border-right: 1px solid rgba(colors.$white, .04);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex: 1;
+  }
+
+  .ds-main-pane-right {
+    width: 240px;
+    background-color: rgba(colors.$black, .1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.ds-page-flex {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}

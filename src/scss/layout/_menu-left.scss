@@ -1,0 +1,61 @@
+@use '../../scss/core/colors';
+@use '../../scss/core/variables';
+
+.ds-menu-left {
+    border-right: 1px solid rgba(colors.$white, .07);
+    background-color: rgba(colors.$black, .1);
+    position: fixed;
+    top: 36px;
+    bottom: 36px;
+    display: flex;
+    justify-content: center;
+    width: 48px;
+    box-sizing: border-box;
+  
+    div {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      display: inline-block;
+      margin: auto;
+    }
+  }
+
+.ds-menu {
+    width: 48px;
+    // float: left;
+    overflow: visible;
+    padding-top: 52px;
+    // position: absolute;
+    z-index: 10;
+    height: 100%;
+}
+
+.ds-menu-btn {
+
+    &:hover {
+        background-color: rgba(colors.$red, .2);
+
+        .ds-tooltip {
+            display: block;
+        }
+
+        .ds-svg-icon {
+            filter: grayscale(100%) sepia(100%);
+        }
+    }
+
+    &.active {
+        background-color: rgba(colors.$red, .2);
+
+        .ds-svg-icon {
+            filter: grayscale(100%) sepia(100%);
+        }
+    }
+
+    .ds-icon {
+        position: relative;
+        &:hover {
+           filter: grayscale(100%) sepia(100%);
+        }
+    }
+}

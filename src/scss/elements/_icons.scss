@@ -1,0 +1,27 @@
+@use '../core/colors';
+@use '../core/variables';
+
+.ds-icon {
+    width: 16px;
+    height: 16px;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+
+    &--24 {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.icn-line {
+    stroke: rgba(colors.$white, .5);
+}
+
+.icn-shape {
+    // fill: rgba(colors.$white, .5);
+
+    &--blue {
+        fill: colors.$ds-blue;
+    }
+}

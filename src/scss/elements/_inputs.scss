@@ -1,0 +1,16 @@
+@use '../core/colors';
+@use '../core/variables';
+
+.pf-input {
+    border: variables.$ds-border-l-5;
+    background-color: rgba(colors.$white, .05);
+    padding: 2px 5px;
+    display: inline-flex;
+    width: 60px;
+
+    &.indicator {
+        font-family: "Roboto Mono";
+        color: colors.$green;
+        text-align: end;
+    }
+}
