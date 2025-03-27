@@ -16,6 +16,11 @@
 
 .icn-line {
     stroke: rgba(colors.$white, .5);
+    stroke-width: 1px;
+
+    &--op-75 {
+        stroke: rgba(colors.$white, .75);
+    }
 }
 
 .icn-shape {

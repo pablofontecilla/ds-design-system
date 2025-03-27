@@ -1,3 +1,11 @@
+@use '_colors';
+@use 'variables';
+@use 'states' as *;
+
+// @mixin disabled {
+//     background-color: red;
+//   }
+
 // TYPOGRAPHY /////////////////////////////
 .upper-case {
     text-transform: uppercase;
@@ -8,13 +16,17 @@
     column-gap: 40px;
 }
 
+.all-caps {
+    text-transform: uppercase;
+}
+
 // PADDING /////////////////////////////
 // LEFT 
 .padding-l-5 {
     padding-left: 5px;
 }
 
-.padding-l-10 {
+.p-l-10 {
     padding-left: 10px;
 }
 
@@ -26,12 +38,29 @@
     padding-left: 30px;
 }
 
-// MARGIN /////////////////////////////
+// RIGHT //////////// 
+.p-r-5 {
+    padding-right: 5px;
+}
 
+.p-r-10 {
+    padding-right: 10px;
+}
+
+.p-r-20 {
+    padding-right: 20px;
+}
+
+.p-r-30 {
+    padding-right: 30px;
+}
+
+// MARGIN /////////////////////////////
 .no-margin {
     margin: 0;
 }
-// LEFT 
+
+// LEFT ////////////
 .margin-l-5 {
     padding-left: 5px;
 }
@@ -46,4 +75,27 @@
 
 .margin-l-30 {
     padding-left: 30px;
+}
+
+// TOP ////////////
+.m-t-30 {
+    margin-top: 30px;
+}
+
+.m-b-30 {
+    margin-bottom: 30px;
+}
+
+
+// FLEX /////////////////////////////
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    background-color: colors.$ds-blue-l-x;
 }

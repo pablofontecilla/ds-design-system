@@ -3,6 +3,7 @@
 @use 'core/_typography';
 @use 'core/_helpers';
 @use 'core/_variables';
+@use 'core/states';
 
 @use './layout/_page';
 @use './layout/_splitter';
@@ -14,6 +15,7 @@
 // @use 'layout/split-grid';
 
 @use 'components/_dropdown';
+@use 'components/_tables';
 
 @use 'elements/_icons';
 @use 'elements/buttons';

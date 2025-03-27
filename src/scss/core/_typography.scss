@@ -39,7 +39,24 @@ p, span, li {
     font-size: 1rem;
     font-family: 'Roboto Light';
     margin: 10px 0;
-    
+}
+
+a {
+    color: colors.$strong-blue; 
+    text-decoration: none;
+
+    &:hover {
+        color: colors.$ds-blue-l-x2;
+    }
+
+    &.disabled {
+        opacity: .5;
+        pointer-events: none;
+    }
+}
+
+.txt-size-08 {
+    font-size: .8rem;
 }
 
 .small {

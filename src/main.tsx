@@ -5,6 +5,8 @@ import NotFoundPage from './demo/pages/NotFoundPage.tsx';
 import Homepage from './demo/pages/Homepage.tsx';
 // import { createBrowserRouter } from 'react-router';
 import { createBrowserRouter, RouterProvider } from "react-router";
+import Examples from './demo/pages/Examples.tsx';
+import Layout from './demo/pages/Layout.tsx';
 
 
 let body: any = document.querySelector("body");
@@ -20,6 +22,18 @@ const router = createBrowserRouter([
     path: '/homepage',
     element: <Homepage/>
   },
+  {
+    path: '/pages/examples',
+    element: <Examples/>
+  },
+  {
+    path: '/pages/layout',
+    element: <Layout/>
+  },
+  // {
+  //   path: '/contact',
+  //   element: <Contact/>
+  // },
 ]);
 
 createRoot(document.getElementById('root')!).render(
