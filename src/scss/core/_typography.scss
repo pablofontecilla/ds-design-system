@@ -9,8 +9,12 @@ body    {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
     font-family: Roboto;
+    color: rgba($color: #ffffff, $alpha: .8);
 }
 
 h1 {
@@ -35,10 +39,15 @@ a.active {
 
 }
 
-p, span, li {
+p, li {
     font-size: 1rem;
     font-family: 'Roboto Light';
     margin: 10px 0;
+}
+
+span {
+    font-size: 1rem;
+    font-family: 'Roboto Light';
 }
 
 a {
@@ -60,6 +69,10 @@ a {
 }
 
 .small {
+    font-size: .85rem;
+}
+
+.smallx2 {
     font-size: .7rem;
 }
 
@@ -67,6 +80,19 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+
+
+ul.small {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 20px;
+
+    li {
+        font-size: .7rem;
+        margin: 5px 0;;
+    }
 }
 
 .text-op60 {
@@ -91,14 +117,3 @@ ul {
     color: rgba(colors.$ds-blue, .5);
 }
 
-.content {
-        padding: 50px;
-        width: 100%;
-        line-height: 1.5rem;
-        margin: 30px 0;
-        height: calc(100% - 30px);
-        display: flex;
-        justify-content: center;
-
-    flex-direction: column;
-}

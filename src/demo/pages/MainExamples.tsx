@@ -11,7 +11,7 @@ type ListItem = {
   release?: string[];
 };
 
-const listItems: ListItem[]  = [
+const listItems: ListItem[] = [
   {
     name: "Layout",
     id: 1,
@@ -74,22 +74,144 @@ export default function MainExamples() {
   };
 
   return (
-    <><div className="ds-main-ctn">
+    <><div className="ds-main-ctn-rev">
+      <div className="text-op60 m-b-20">Release Date: April 30, 2024</div>
       <div className="flex-table projects-list">
         <div className="row">
           <div className="cell">
           </div>
+          <div className="cell three-cols">
+            <span className="text-op85 txt-size-08">Dev</span>
+            <span className="text-op85 txt-size-08">Pre-release</span>
+            <span className="text-op85 txt-size-08">Prod</span>
+          </div>
+
+        </div>
+        <div className="row">
           <div className="cell">
-          <p className="text-op85 txt-size-08">Dev</p>
+            {/* <a href="" className="text-op85">Layout</a> */}
+            <a href="/pages/layout" className="text-op85">Layout</a>
           </div>
-          <div className="cell flex">
-          <p className="text-op85 txt-size-08">Pre-release</p>
-          </div>
-          <div className="cell flex">
-          <p className="text-op85 txt-size-08">Prod</p>
+          <div className="cell three-cols">
+            <span><div className="dot transparent"></div></span>
+            <span><div className="dot green"></div></span>
+            <span><div className="dot transparent"></div></span>
           </div>
         </div>
-        {listItems.map((item) => (
+
+        <div className="row">
+          <div className="cell">
+            <a href="" className="disabled p-l-20">Header</a>
+          </div>
+          <div className="cell three-cols">
+            <span><div className="dot green"></div></span>
+            <span><div className="dot transparent"></div></span>
+            <span><div className="dot transparent"></div></span>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="cell">
+            <a href="" className="disabled p-l-20">Footer</a>
+          </div>
+          <div className="cell three-cols">
+            <span><div className="dot green"></div></span>
+            <span><div className="dot transparent"></div></span>
+            <span><div className="dot transparent"></div></span>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="cell">
+            <a href="" className="disabled p-l-20">Menu left</a>
+          </div>
+          <div className="cell three-cols">
+            <span><div className="dot green"></div></span>
+            <span><div className="dot transparent"></div></span>
+            <span><div className="dot transparent"></div></span>
+          </div>
+        </div>
+
+
+        <div className="row">
+          <div className="cell">
+            <a href="" className="disabled">Dropdown</a>
+          </div>
+          <div className="cell three-cols">
+            <span><div className="dot green"></div></span>
+            <span><div className="dot transparent"></div></span>
+            <span><div className="dot transparent"></div></span>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="cell">
+            <a href="" className="disabled">Buttons</a>
+          </div>
+          <div className="cell three-cols">
+            <span><div className="dot green"></div></span>
+            <span><div className="dot transparent"></div></span>
+            <span><div className="dot transparent"></div></span>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="cell">
+            <a href="" className="disabled">Splitter</a>
+          </div>
+          <div className="cell three-cols">
+            <span><div className="dot green"></div></span>
+            <span><div className="dot transparent"></div></span>
+            <span><div className="dot transparent"></div></span>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="cell">
+            <a href="" className="disabled">Inputs</a>
+          </div>
+          <div className="cell three-cols">
+            <span><div className="dot "></div></span>
+            <span><div className="dot transparent"></div></span>
+            <span><div className="dot transparent"></div></span>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="cell">
+            <a href="" className="disabled">Accordeon</a>
+          </div>
+          <div className="cell three-cols">
+            <span><div className="dot "></div></span>
+            <span><div className="dot transparent"></div></span>
+            <span><div className="dot transparent"></div></span>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="cell">
+            <a href="" className="disabled">Modal</a>
+          </div>
+          <div className="cell three-cols">
+            <span><div className="dot "></div></span>
+            <span><div className="dot transparent"></div></span>
+            <span><div className="dot transparent"></div></span>
+          </div>
+        </div>
+
+<div className="row">
+  <div className="cell">
+    <a href="" className="disabled">Icons</a>
+  </div>
+  <div className="cell three-cols">
+    <span><div className="dot "></div></span>
+    <span><div className="dot transparent"></div></span>
+    <span><div className="dot transparent"></div></span>
+  </div>
+</div>
+
+
+        {/* {listItems.map((item) => (
           <div  key={item.id} className={`slide ${item.isActive ? 'row active' : 'row'}`}>
             <div className="cell">
               <a href="/pages/layout" className="text-op85">{item.name}</a>
@@ -112,7 +234,7 @@ export default function MainExamples() {
                                 )}
             </div>
           </div>
-        ))}
+        ))} */}
       </div>
 
     </div>

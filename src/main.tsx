@@ -6,7 +6,8 @@ import Homepage from './demo/pages/Homepage.tsx';
 // import { createBrowserRouter } from 'react-router';
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Examples from './demo/pages/Examples.tsx';
-import Layout from './demo/pages/Layout.tsx';
+import Layout from './demo/pages/page-flex/PageFlex.tsx';
+import Contact from './ds/pages/Contact.tsx';
 
 
 let body: any = document.querySelector("body");
@@ -30,10 +31,10 @@ const router = createBrowserRouter([
     path: '/pages/layout',
     element: <Layout/>
   },
-  // {
-  //   path: '/contact',
-  //   element: <Contact/>
-  // },
+  {
+    path: '/pages/contact',
+    element: <Contact/>
+  },
 ]);
 
 createRoot(document.getElementById('root')!).render(

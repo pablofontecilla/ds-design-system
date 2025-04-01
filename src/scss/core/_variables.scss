@@ -15,6 +15,7 @@ $ds-border-l-10: 1px solid lighten(colors.$gray-dark, 10);
 
 // SHADOWS /////////////////////////////
 $ds-box-shadow: 0 3px 8px rgba(colors.$black, .15);
+$ds-box-shadow-lt: 0 3px 8px rgba(colors.$black, .15);
 
 // LAYOUT /////////////////////////////
 $ds-header-height: 64px;
@@ -29,7 +30,6 @@ $measure-28: 28px;
 $measure-24: 24px;
 
 // OPACITY /////////////////////////////
-
 $op-1: 1;
 $op-85: .85;
 $op-80: .8;
@@ -37,3 +37,14 @@ $op-default: .75;
 $op-60: .6;
 $op-5: .5;
 $op-disabled: .3;
+
+// TEXT  /////////////////////////////
+$font-size-xxsmall: 12px;
+$font-size-xsmall: 14px;
+$font-size-small: 16px;
+$font-size-default: 18px;
+$font-size-large: 20px;
+$font-size-xlarge: 22px;
+$font-size-xxlarge: 24px;
+$font-size-xxlarge: 28px;
+$font-size-xxlarge-36: 36px;

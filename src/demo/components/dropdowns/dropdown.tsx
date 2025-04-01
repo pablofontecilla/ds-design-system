@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Home from '../../components/icons/Home';
-import Hamburger from '../../components/icons/Hamburger';
+// import Home from '../../components/icons/Home';
+// import Hamburger from '../../components/icons/Hamburger';
 import { NavLink } from "react-router";
 
 const DropdownObject = () => {
@@ -12,9 +12,9 @@ const DropdownObject = () => {
           <button className="ds-btn">Overview</button>
         </NavLink>
       </li>
-      <li className="ds-dropdown__list no-margin">
-        <NavLink to="/pages/portfolio"><button>Contact</button></NavLink>
-      </li>
+      {/* <li className="ds-dropdown__list no-margin">
+        <NavLink to="/pages/contact"><button>Contact</button></NavLink>
+      </li> */}
     </ul>
   )
 }

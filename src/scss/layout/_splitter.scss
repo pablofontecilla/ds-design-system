@@ -2,39 +2,29 @@
 @use '../../scss/core/variables';
 
 .splitter-ctn {
-    // position: absolute;
     margin: 36px 0 36px 48px;
     left: 48px;
-    // bottom: 36px;
-    // width: calc(100% - 48px);
     height: calc(100% - 64px);
-
-    // width: 100%;
-    // height: 100%;
     display: flex;
     flex-direction: row;
-    // background-color: rgba(colors.$white, .0001);
 }
 
 .left-panel {
     width: 60%;
+    min-width: 300px;
     height: 100%;
     background-color: colors.$gray-dark;
     z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .right-panel {
     flex: 1;
     height: 100%;
-    background-color: rgba(colors.$white, .01);
-    // display: none;
+    z-index: 6;
 
-    h2 {
-        margin: 20px;
-    }
+    min-width: 240px;
+    background-color: rgba(colors.$white, .01);
+    box-shadow: -3px 11px 10px rgba(colors.$black, 0.1);
 }
 
 .splitter-btns-bar {
@@ -61,28 +51,17 @@
 }
 
 .splitter-row {
-    width: 1px;
+    width: 2px;
     height: 100%;
     background-color: colors.$gray-dark-l-10;
-    background-color: #505050;
     box-sizing: border-box;
-    z-index: 0;
+    z-index: 10;
+    
 
     &:hover {
         cursor: ew-resize;
-        background-color: aqua;
-        outline: 2px solid aqua;
+        background-color: colors.$ds-blue-light;
+        // outline: 3px solid colors.$ds-blue-light;
 
     }
-}
-
-.splitter-row-inside {
-    width: 1px;
-    background-color: rgba(colors.$red, .5);
-    height: 90%;
-    margin-left: 20px;
-}
-
-.splitter-row:hover {
-    .splitter-btns-ctn {}
 }

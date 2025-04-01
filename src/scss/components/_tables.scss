@@ -16,9 +16,9 @@
         display: table-row;
         background-color: darken(colors.$gray-dark, 1);
 
-        a {
-            @include disabled;
-        }
+        // a {
+        //     @include disabled;
+        // }
 
         .dot {
             opacity: .4;
@@ -53,4 +53,11 @@
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
+
+    &.green {
+        background-color: colors.$green;
+    }
+    &.transparent {
+        background-color: transparent;
+    }
 }

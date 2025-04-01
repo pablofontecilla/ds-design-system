@@ -3,6 +3,7 @@ import Header from './Header'
 import FooterFlex from '../page/FooterFlex'
 import MenuLeftFixed from '../page/MenuLeft'
 import MainWithSplitter from '../page/MainWithSplitter'
+import MainHomepage from './MainHomepage'
 
 export default function Homepage() {
   return (
@@ -11,7 +12,7 @@ export default function Homepage() {
         <Header />
         <MenuLeftFixed />
         {/* <MainFlex /> */}
-        <MainWithSplitter />
+        <MainHomepage />
         <FooterFlex />
       </div>
     </>

@@ -12,21 +12,43 @@
         width: 24px;
         height: 24px;
     }
-}
 
-.icn-line {
-    stroke: rgba(colors.$white, .5);
-    stroke-width: 1px;
+    .icn-line {
+        stroke: rgba(colors.$white, .5);
+        stroke-width: 1px;
+    }
+    
+    .icn-shape {
 
-    &--op-75 {
-        stroke: rgba(colors.$white, .75);
+    }
+
+    &:hover {
+        .icn-line {
+        }
+
+
+        .icn-shape--blue {
+        }
     }
 }
 
-.icn-shape {
-    // fill: rgba(colors.$white, .5);
 
-    &--blue {
+.ds-brand-icon {
+    .icn-shape {
         fill: colors.$ds-blue;
+        stroke: rgba(colors.$white, .75);
+        paint-order: stroke;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+
+    &:hover {
+        .icn-shape {
+            stroke: colors.$white;
+
+            &.center {
+                fill: colors.$ds-blue-light;
+            }
+        }
     }
 }
