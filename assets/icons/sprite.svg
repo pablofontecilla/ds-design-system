@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<style type="text/css">
+	@import url(../../src/scss/elements/icons.scss);
+</style>
+  
+  <symbol id="icon-1" viewBox="0 0 16 16">
+    <title>Kinda like alt text</title>
+    <path class="icn-line" d="M6 1L1 6L6 11" stroke="#999999"/>
+  </symbol>
+
+
+
+</svg>

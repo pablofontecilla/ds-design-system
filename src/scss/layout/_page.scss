@@ -1,0 +1,128 @@
+@use '../../scss/core/colors';
+@use '../../scss/core/variables' as variables;
+
+@mixin header {
+  // background-color: rgba(colors.$black, .1);
+  background-color: colors.$gray-dark-d-10;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: fixed;
+  text-transform: uppercase;
+  z-index: 12;
+}
+
+.ds-footer {
+  @include header;
+  bottom: 0;
+  border-top: 1px solid rgba(colors.$white, .04);
+  box-shadow: 0 -3px 8px rgba(colors.$black, .1);
+  z-index: 20;
+}
+
+.ds-main-ctn-rev {
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  margin: 60px 15%;
+  flex-direction: column;
+}
+
+.projects-list {
+  margin: 20px auto 0;
+  width: 100%;
+  // padding: 50px;
+  height: fit-content;
+
+  .three-cols {
+    span {
+      display: inline-block;
+      width: 33%;
+      text-align: center;
+    }
+  }
+}
+
+.ds-main-ctn {
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+
+  .ds-main {
+    border-right: 1px solid rgba(colors.$white, .04);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  
+
+  // .projects-list {
+  //   margin: 20px auto 0;
+  //   width: 80%;
+  //   padding: 50px;
+  //   height: fit-content;
+
+  //   .three-cols {
+  //     span {
+  //       display: inline-block;
+  //       width: 33%;
+  //       text-align: center;
+  //     }
+  //   }
+  // }
+
+  .ds-main-pane-right {
+    width: 240px;
+    background-color: rgba(colors.$black, .1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.content {
+  line-height: 1.3rem;
+  margin: 0;
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20px 0 40px;
+
+  &.d-block {
+    display: block;
+    padding-top: 60px;
+  }
+
+  p {
+    padding-left: 20px;
+  }
+
+  ul {
+    list-style-type: disc;
+    margin-left: 10px;
+  }
+
+  .emphasis {
+    line-height: 1;
+  }
+}
+
+// HOMEPAGE //////////////////////////////
+.homepage-outlined {
+  background-color: rgba(colors.$black, .15);
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  column-count: 2;
+    column-gap: 40px;
+    color: rgba(colors.$white, .5);
+    font-style: italic;
+    font-size: small;
+}

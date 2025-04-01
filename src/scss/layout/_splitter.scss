@@ -1,0 +1,67 @@
+@use '../../scss/core/colors';
+@use '../../scss/core/variables';
+
+.splitter-ctn {
+    margin: 36px 0 36px 48px;
+    left: 48px;
+    height: calc(100% - 64px);
+    display: flex;
+    flex-direction: row;
+}
+
+.left-panel {
+    width: 60%;
+    min-width: 300px;
+    height: 100%;
+    background-color: colors.$gray-dark;
+    z-index: 2;
+}
+
+.right-panel {
+    flex: 1;
+    height: 100%;
+    z-index: 6;
+
+    min-width: 240px;
+    background-color: rgba(colors.$white, .01);
+    box-shadow: -3px 11px 10px rgba(colors.$black, 0.1);
+}
+
+.splitter-btns-bar {
+    height: 16px;
+    display: inline-flex;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+    justify-content: end;
+    z-index: 100;
+    margin-top: 1px;
+}
+
+.splitter-btns-ctn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.splitter-row-ctn {
+    border: 1px solid #ccc;
+}
+
+.splitter-row {
+    width: 2px;
+    height: 100%;
+    background-color: colors.$gray-dark-l-10;
+    box-sizing: border-box;
+    z-index: 10;
+    
+
+    &:hover {
+        cursor: ew-resize;
+        background-color: colors.$ds-blue-light;
+        // outline: 3px solid colors.$ds-blue-light;
+
+    }
+}

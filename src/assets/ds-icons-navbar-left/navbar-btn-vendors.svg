@@ -1,0 +1,13 @@
+ 
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
+	 viewBox="0 0 48 52" style="enable-background:new 0 0 48 52;">
+	 
+<g id="icn-vendors">
+	<polyline class="icn-ds-shape" points="29.7,21.4 29.7,35.3 14.5,35.3 14.5,16.2 25.4,16.2 29.7,21.4 "/>
+	<polyline class="icn-ds-shape-c" points="29.7,21.4 25.4,21.4 25.4,16.2 "/>
+	<g>
+		<polyline class="icn-ds-line" points="24.54,31.7 20.8,27.96 24.54,24.23 		"/>
+		<line class="icn-ds-line" x1="20.87" y1="27.96" x2="34.8" y2="27.96"/>
+	</g>
+</g>
+</svg>

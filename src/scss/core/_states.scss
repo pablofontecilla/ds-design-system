@@ -1,0 +1,7 @@
+@use '_colors';
+@use 'variables';
+
+@mixin disabled {
+    opacity: .4;
+    pointer-events: none;
+}

@@ -1,0 +1,119 @@
+@use '_colors';
+@use 'variables';
+
+body    {
+    font-size: .8rem;
+    font-family: "Lato Regular";
+    color: colors.$white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Roboto;
+    color: rgba($color: #ffffff, $alpha: .8);
+}
+
+h1 {
+    font-size: 1rem;
+    font-family: 'Roboto Light';
+    margin: 0;
+}
+
+h2 {
+    font-size: 1rem;
+    opacity: variables.$op-default;
+}
+
+h4 {
+    font-size: .9rem;
+}
+
+a.active {
+    button {
+       color: colors.$strong-blue; 
+    }
+
+}
+
+p, li {
+    font-size: 1rem;
+    font-family: 'Roboto Light';
+    margin: 10px 0;
+}
+
+span {
+    font-size: 1rem;
+    font-family: 'Roboto Light';
+}
+
+a {
+    color: colors.$strong-blue; 
+    text-decoration: none;
+
+    &:hover {
+        color: colors.$ds-blue-l-x2;
+    }
+
+    &.disabled {
+        opacity: .5;
+        pointer-events: none;
+    }
+}
+
+.txt-size-08 {
+    font-size: .8rem;
+}
+
+.small {
+    font-size: .85rem;
+}
+
+.smallx2 {
+    font-size: .7rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+ul.small {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 20px;
+
+    li {
+        font-size: .7rem;
+        margin: 5px 0;;
+    }
+}
+
+.text-op60 {
+    opacity: variables.$op-60;
+}
+
+.text-op75 {
+    opacity: variables.$op-default;
+}
+
+.text-op80 {
+    opacity: variables.$op-80;
+}
+
+.text-op85 {
+    opacity: variables.$op-85;
+}
+
+.emphasis {
+    font-size:3rem;
+    font-weight: 700;
+    color: rgba(colors.$ds-blue, .5);
+}
+

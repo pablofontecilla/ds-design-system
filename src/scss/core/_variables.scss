@@ -1,0 +1,50 @@
+@use '_colors';
+
+// MEASURES /////////////////////////////
+$xxsmall: 12px;
+$xsmall: 16px;
+$small: 20px;
+$default: 24px;
+$large: 28px;
+$xlarge: 32px;
+$xxlarge: 36px;
+
+// BORDERS /////////////////////////////
+$ds-border-l-5: 1px solid lighten(colors.$gray-dark, 5);
+$ds-border-l-10: 1px solid lighten(colors.$gray-dark, 10);
+
+// SHADOWS /////////////////////////////
+$ds-box-shadow: 0 3px 8px rgba(colors.$black, .15);
+$ds-box-shadow-lt: 0 3px 8px rgba(colors.$black, .15);
+
+// LAYOUT /////////////////////////////
+$ds-header-height: 64px;
+$ds-footer-height: 32px;
+$ds-header-plus-footer: calc(#{$ds-header-height} + #{$ds-footer-height});
+$menu-left-width: 48px;
+
+// MEASURES /////////////////////////////
+$measure-48: 48px;
+$measure-36: 36px;
+$measure-28: 28px;
+$measure-24: 24px;
+
+// OPACITY /////////////////////////////
+$op-1: 1;
+$op-85: .85;
+$op-80: .8;
+$op-default: .75;
+$op-60: .6;
+$op-5: .5;
+$op-disabled: .3;
+
+// TEXT  /////////////////////////////
+$font-size-xxsmall: 12px;
+$font-size-xsmall: 14px;
+$font-size-small: 16px;
+$font-size-default: 18px;
+$font-size-large: 20px;
+$font-size-xlarge: 22px;
+$font-size-xxlarge: 24px;
+$font-size-xxlarge: 28px;
+$font-size-xxlarge-36: 36px;

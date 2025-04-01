@@ -1,0 +1,54 @@
+@use '../core/colors';
+@use '../core/variables';
+
+.ds-icon {
+    width: 16px;
+    height: 16px;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+
+    &--24 {
+        width: 24px;
+        height: 24px;
+    }
+
+    .icn-line {
+        stroke: rgba(colors.$white, .5);
+        stroke-width: 1px;
+    }
+    
+    .icn-shape {
+
+    }
+
+    &:hover {
+        .icn-line {
+        }
+
+
+        .icn-shape--blue {
+        }
+    }
+}
+
+
+.ds-brand-icon {
+    .icn-shape {
+        fill: colors.$ds-blue;
+        stroke: rgba(colors.$white, .75);
+        paint-order: stroke;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+
+    &:hover {
+        .icn-shape {
+            stroke: colors.$white;
+
+            &.center {
+                fill: colors.$ds-blue-light;
+            }
+        }
+    }
+}

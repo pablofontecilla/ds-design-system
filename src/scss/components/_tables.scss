@@ -1,0 +1,63 @@
+@use '../core/colors';
+@use '../core/variables';
+@use '../core/states' as *;
+
+.ds-page-flex {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-table {
+    display: table;
+    flex-direction: row;
+
+    .row {
+        display: table-row;
+        background-color: darken(colors.$gray-dark, 1);
+
+        // a {
+        //     @include disabled;
+        // }
+
+        .dot {
+            opacity: .4;
+        }
+
+        &.active {
+            // background-color: colors.$red;
+
+            .dot {
+                opacity: 1;
+            }
+
+            a {
+                opacity: 1;
+                pointer-events: auto;
+            }
+        }
+
+        .cell {
+            display: table-cell;
+            padding: 10px 30px;
+            border-bottom: variables.$ds-border-l-5;
+        }
+    }
+}
+
+
+
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+
+    &.green {
+        background-color: colors.$green;
+    }
+    &.transparent {
+        background-color: transparent;
+    }
+}

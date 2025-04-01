@@ -1,0 +1,23 @@
+
+$ds-blue: #4c88a2;
+$ds-blue-light: #58cafc;
+$ds-blue-l-x2: lighten($ds-blue-light, 20);
+$ds-blue-l-x: lighten($ds-blue-light, 10);
+$red: #d72a2aaf;
+$green: #7CDA85;
+$black: #000;
+$white: #fff;
+
+$gray-dark: #1e1f20;
+$gray-dark-l-10: lighten($gray-dark, 10);
+$gray-dark-d-10: darken($gray-dark, 1);
+
+$ds-bg-theme-dark: $gray-dark;
+
+.ds-bg-theme-dark {
+    background-color: $ds-bg-theme-dark;
+
+}
+
+$ds-d-bg-blue06: #1e2224;
+$strong-blue: #87abba;
