@@ -1,8 +1,4 @@
 import { useState } from "react";
-import Left from "../splitter/buttons/Left";
-import Right from "../splitter/buttons/Right";
-import Center from "../splitter/buttons/Center";
-import ChildComponent from "../splitter/ChildComponent";
 
 type ListItem = {
   name: string;

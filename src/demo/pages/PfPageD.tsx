@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react';
-// import { ReactComponent as MoveLeft } from '../../assets/icons/move-left.svg';
-// import { ReactComponent as MoveRight } from '../../assets/icons/move-right.svg';
-import ChildComponent from './split-rev/ChildComponent';
+
 import Left from './split-rev/buttons/Left';
 import Center from './split-rev/buttons/Center';
 import Right from './split-rev/buttons/Right';
-import DsIcon from '../components/icons/DsIcon';
 
 export default function PfPageD() {
   const [isCentered, setIsCentered] = useState(true);
@@ -19,10 +16,10 @@ export default function PfPageD() {
   const [splitterX, setSplitterX] = useState(0);
   const [stateVariable, setStateVariable] = useState('');
 
-  const onMouseDown = ((e: any) => [
-    setIsDragging(true),
-    console.log(e),
-  ]);
+  // const onMouseDown = ((e: any) => [
+  //   setIsDragging(true),
+  //   console.log(e),
+  // ]);
 
   function onMouseDownB(e: any) {
     setIsDragging(true);
@@ -45,24 +42,24 @@ export default function PfPageD() {
   //   alert('sss')
   // });           
 
-  function moveToLeft(e: any) {
-    let mx = e.pageX - splitterX;
-    setIsFullLeft(true);
-    setSplitterX(e.pageX);
-    e.stopPropagation();
-  };
+  // function moveToLeft(e: any) {
+  //   let mx = e.pageX - splitterX;
+  //   setIsFullLeft(true);
+  //   setSplitterX(e.pageX);
+  //   e.stopPropagation();
+  // };
 
-  function CollapseToLeft() {
-    setIsFullLeft(isFullLeft => !isFullLeft);
-    setIsCentered(isFullLeft => !isFullLeft);
-  }
+  // function CollapseToLeft() {
+  //   setIsFullLeft(isFullLeft => !isFullLeft);
+  //   setIsCentered(isFullLeft => !isFullLeft);
+  // }
 
-  function CollapseToRight(e: any) {
-    let isGoal = 2;
-    setIsFullRight(!isFullRight);
-    setIsCentered(!isCentered);
-    console.log(isCentered)
-  }
+  // function CollapseToRight(e: any) {
+  //   let isGoal = 2;
+  //   setIsFullRight(!isFullRight);
+  //   setIsCentered(!isCentered);
+  //   console.log(isCentered)
+  // }
 
   function onMouseMove(e: any) {
     let mx = e.pageX - splitterX;
@@ -97,10 +94,10 @@ export default function PfPageD() {
     }
   }, [isDragging]);
 
-  function testIsCentered() {
-    setIsFullLeft(!isFullLeft)
-    console.log("setIsFullLeft: " + isCentered + "setIsCentered: " + isFullLeft)
-  }
+  // function testIsCentered() {
+  //   setIsFullLeft(!isFullLeft)
+  //   console.log("setIsFullLeft: " + isCentered + "setIsCentered: " + isFullLeft)
+  // }
 
 
   return (
@@ -163,10 +160,10 @@ export function SplitButtonC() {
     console.log(position)
   }
 
-  const switchToCenter = (positionState: React.SetStateAction<string>) => {
-    setPosition(positionState);
-    console.log(position)
-  }
+  // const switchToCenter = (positionState: React.SetStateAction<string>) => {
+  //   setPosition(positionState);
+  //   console.log(position)
+  // }
 
   const switchToRight = (positionState: React.SetStateAction<string>) => {
     setPosition(positionState);
@@ -182,8 +179,7 @@ export function SplitButtonC() {
         switch (position) {
           case 'left':
             return <Left handleClick={switchToLeft} />
-          // case 'center':
-          //   return <Center handleClick={switchToCenter} />
+
           case 'right':
             return <Right handleClick={switchToRight} />
 
