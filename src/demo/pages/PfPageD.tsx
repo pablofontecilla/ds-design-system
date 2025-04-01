@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react';
-// import { ReactComponent as MoveLeft } from '../../assets/icons/move-left.svg';
-// import { ReactComponent as MoveRight } from '../../assets/icons/move-right.svg';
-import ChildComponent from './split-rev/ChildComponent';
+
 import Left from './split-rev/buttons/Left';
 import Center from './split-rev/buttons/Center';
 import Right from './split-rev/buttons/Right';
-import DsIcon from '../components/icons/DsIcon';
 
 export default function PfPageD() {
   const [isCentered, setIsCentered] = useState(true);

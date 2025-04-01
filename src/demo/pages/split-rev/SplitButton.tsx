@@ -1,51 +1,4 @@
-import React, { useState } from 'react';
-
-
-
-// export default function SplitButton() {
-//     let [isCentered, setIsCentered] = useState(true);
-
-//     let position: any = [
-//         { "1": "left" },
-//         { "2": "center" },
-//         { "3": "right" }
-//     ]
-
-//     function CollapseToRight(e: any) {
-//         position = "1";
-//         isCentered = !isCentered;
-//         console.log("isCentered: " + isCentered + " -position: " + position)
-//     }
-
-//     if (position === "1") {
-//         console.log("position: " + position)
-//         return (
-//             <button>1</button>
-//         )
-//     }
-
-//     else if (position === "2") {
-//         console.log("position: " + position)
-//         return (
-//             <button>2</button>
-//         )
-//     }
-
-//     else {
-//         console.log("position: " + position)
-//         return (
-//             <><button>3b</button><button onClick={CollapseToRight}>click</button></>
-//         )
-//     }
-// }
-
-// function fillColor(count: number) {
-//     var fill = "";
-//     if (count === 1) fill = "#E1E0DD";
-//     if (count === 2) fill = "#999999";
-//     if (count === 3) fill = "#000";
-//     return fill;
-// }
+import React from 'react';
 
 export default class SplitButton extends React.Component<{}, { count: number, countB: number, cssClass: string }> {
     constructor(props: {}) {
@@ -73,7 +26,6 @@ export default class SplitButton extends React.Component<{}, { count: number, co
         var count = this.state.count;
         var cssClass = this.state.cssClass;
         count = count !== 3 ? count + 1 : 0 && cssClass == 'sss';
-        // cssClass = "sss"
         
         this.setState({
             count: count,
@@ -134,12 +86,3 @@ export default class SplitButton extends React.Component<{}, { count: number, co
         );
     }
 }
-
-// const App = () => (
-// <div>
-//     <Switch checked={ true } />
-// </div>
-// )
-
-// React.render( <App />, document.getElementById( "page" ) );
-

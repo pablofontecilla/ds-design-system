@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 export default class SplitButtonB extends React.Component<{}, { count: number }> {
     constructor(props: {}) {
@@ -42,12 +42,4 @@ export default class SplitButtonB extends React.Component<{}, { count: number }>
         );
     }
 }
-
-// const App = () => (
-// <div>
-//     <Switch checked={ true } />
-// </div>
-// )
-
-// React.render( <App />, document.getElementById( "page" ) );
 

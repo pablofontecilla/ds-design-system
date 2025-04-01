@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import Paneleft from "./Paneleft";
 import PaneLeft from "./Paneleft";
 
 export default function MainLayout() {
@@ -36,28 +35,6 @@ const [isCentered, setIsCentered] = useState(true);
       console.warn("Element with class 'leftPanel' not found.");
     }
   }); 
-
-  // function onMouseDownB(e: any) {
-  //   setIsDragging(true);
-  
-  //   // Safely access previous and next sibling elements
-  //   const pEle = e.target.previousElementSibling;
-  //   const nEle = e.target.nextElementSibling;
-  
-  //   if (pEle && nEle) {
-  //     setLeftPanel(pEle);
-  //     setRightPanel(nEle);
-  //     setLeftPanelWidth(pEle.offsetWidth); // Safe access
-  //     setRightPanelWidth(nEle.offsetWidth); // Safe access
-  //     setSplitterX(e.pageX);
-  //   } else {
-  //     console.warn("Previous or next sibling element is null.");
-  //   }
-  // }
-
-  // let leftPaneContent: any = document.querySelector("body");
-  // leftPaneContent.className = "left-panelo pf-theme pf-theme--dark";
-
 
   document.addEventListener('DOMContentLoaded', function () {
     const leftPanelElement = document.querySelector('.leftPanel'); // Ensure the selector is correct
