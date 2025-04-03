@@ -1,9 +1,8 @@
-import React, { Component } from 'react'
 
-export default class SplitArrows extends Component {
+export default class SplitArrows {
   render() {
     return (
-      <div className='split-arrows-ctn'>s</div>
+      <div className='split-arrows-ctn'>ssssss</div>
     )
   }
 }

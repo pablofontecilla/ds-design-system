@@ -1,31 +1,27 @@
 import { useState } from "react";
-import Left from "../splitter/buttons/Left";
-import Right from "../splitter/buttons/Right";
-import Center from "../splitter/buttons/Center";
-import ChildComponent from "../splitter/ChildComponent";
 
 export default function MainWithSplitter() {
-  const [isCentered, setIsCentered] = useState(true);
+  // const [isCentered, setIsCentered] = useState(true);
   const [isFullLeft, setIsFullLeft] = useState(false);
   const [isFullRight, setIsFullRight] = useState(false);
-  const [isDragging, setIsDragging] = useState(false);
-  const [leftPanel, setLeftPanel] = useState(null);
-  const [leftPanelWidth, setLeftPanelWidth] = useState(null);
-  const [rightPanel, setRightPanel] = useState(null);
-  const [rightPanelWidth, setRightPanelWidth] = useState(null);
-  const [splitterX, setSplitterX] = useState(0);
+  // const [isDragging, setIsDragging] = useState(false);
+  // const [leftPanel, setLeftPanel] = useState(null);
+  // const [leftPanelWidth, setLeftPanelWidth] = useState(null);
+  // const [rightPanel, setRightPanel] = useState(null);
+  // const [rightPanelWidth, setRightPanelWidth] = useState(null);
+  // const [splitterX, setSplitterX] = useState(0);
 
-  function onMouseDownB(e: any) {
-    setIsDragging(true);
-    let pEle = e.target.previousElementSibling;
-    let nEle = e.target.nextElementSibling;
-    setLeftPanel(pEle);
-    setRightPanel(nEle);
-    setLeftPanelWidth(pEle.offsetWidth);
-    setRightPanelWidth(nEle.offsetwidth);
-    setSplitterX(e.pageX);
+  // function onMouseDownB(e: any) {
+  //   setIsDragging(true);
+  //   let pEle = e.target.previousElementSibling;
+  //   let nEle = e.target.nextElementSibling;
+  //   setLeftPanel(pEle);
+  //   setRightPanel(nEle);
+  //   setLeftPanelWidth(pEle.offsetWidth);
+  //   setRightPanelWidth(nEle.offsetwidth);
+  //   setSplitterX(e.pageX);
 
-  };
+  // };
 
   return (
     <div className={isFullRight ? "splitter-ctn right-closed" : "splitter-ctn"}>
@@ -62,7 +58,7 @@ export default function MainWithSplitter() {
 
         </div>
       </div>
-      <div className="splitter-row" onMouseDown={onMouseDownB} ></div>
+      <div className="splitter-row"></div>
       <div id="rightPanel" className="right-panel">
         <div className="splitter-btns-bar right">
         </div>
