@@ -10,7 +10,6 @@ export default function Page() {
         <Header />
         <MenuLeftFixed />
         <MainFlex />
-        {/* <MainWithSplitter /> */}
         <FooterFlex />
       </div>
     </>

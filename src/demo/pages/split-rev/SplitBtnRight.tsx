@@ -1,17 +1,12 @@
 
-import SplitButton from './SplitButton';
-
-
-
-
-
-
+import SplitButton from './buttons/Center';
 
 export default function SplitBtnRight() {
 
 
     return <>
-    <SplitButton />
+    {/* <SplitButton /> */}
+    <div>temp</div>
 
     </>;
 };

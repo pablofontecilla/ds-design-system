@@ -2,31 +2,31 @@ import { useState } from "react";
 
 
 export default function MainWithSplitter() {
-  const [isCentered, setIsCentered] = useState(true);
-  const [isFullLeft, setIsFullLeft] = useState(false);
-  const [isFullRight, setIsFullRight] = useState(false);
-  const [isDragging, setIsDragging] = useState(false);
-  const [leftPanel, setLeftPanel] = useState(null);
-  const [leftPanelWidth, setLeftPanelWidth] = useState(null);
-  const [rightPanel, setRightPanel] = useState(null);
-  const [rightPanelWidth, setRightPanelWidth] = useState(null);
-  const [splitterX, setSplitterX] = useState(0);
+  // const [isCentered, setIsCentered] = useState(true);
+  // const [isFullLeft, setIsFullLeft] = useState(false);
+  // const [isFullRight, setIsFullRight] = useState(false);
+  // const [isDragging, setIsDragging] = useState(false);
+  // const [leftPanel, setLeftPanel] = useState(null);
+  // const [leftPanelWidth, setLeftPanelWidth] = useState(null);
+  // const [rightPanel, setRightPanel] = useState(null);
+  // const [rightPanelWidth, setRightPanelWidth] = useState(null);
+  // const [splitterX, setSplitterX] = useState(0);
 
   function onMouseDownB(e: any) {
-    setIsDragging(true);
-    let pEle = e.target.previousElementSibling;
-    let nEle = e.target.nextElementSibling;
-    setLeftPanel(pEle);
-    setRightPanel(nEle);
-    setLeftPanelWidth(pEle.offsetWidth);
-    setRightPanelWidth(nEle.offsetwidth);
-    setSplitterX(e.pageX);
+    // setIsDragging(true);
+    // let pEle = e.target.previousElementSibling;
+    // let nEle = e.target.nextElementSibling;
+    // setLeftPanel(pEle);
+    // setRightPanel(nEle);
+    // setLeftPanelWidth(pEle.offsetWidth);
+    // setRightPanelWidth(nEle.offsetwidth);
+    // setSplitterX(e.pageX);
 
   };
 
   return (
-    <div className={isFullRight ? "splitter-ctn right-closed" : "splitter-ctn"}>
-      <div id="leftPanel" className={isFullLeft ? "left-panel" : "left-panel"}>
+    <div className="splitter-ctn">
+      <div id="leftPanel" className="left-panel">
         <div>
         </div>
         <div className='content'>
