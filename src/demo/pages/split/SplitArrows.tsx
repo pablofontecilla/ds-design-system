@@ -2,7 +2,7 @@
 export default class SplitArrows {
   render() {
     return (
-      <div className='split-arrows-ctn'>s</div>
+      <div className='split-arrows-ctn'>ssssss</div>
     )
   }
 }
