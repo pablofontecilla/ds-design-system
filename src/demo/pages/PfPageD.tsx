@@ -5,16 +5,16 @@ import Center from './split-rev/buttons/Center';
 import Right from './split-rev/buttons/Right';
 
 export default function PfPageD() {
-  const [isCentered, setIsCentered] = useState(true);
-  const [isFullLeft, setIsFullLeft] = useState(false);
-  const [isFullRight, setIsFullRight] = useState(false);
+  // const [isCentered, setIsCentered] = useState(true);
+  // const [isFullLeft, setIsFullLeft] = useState(false);
+  // const [isFullRight, setIsFullRight] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
   const [leftPanel, setLeftPanel] = useState<HTMLElement | null>(null);
   const [leftPanelWidth, setLeftPanelWidth] = useState<number | null>(null);
   const [rightPanel, setRightPanel] = useState<HTMLElement | null>(null);
   const [rightPanelWidth, setRightPanelWidth] = useState(null);
   const [splitterX, setSplitterX] = useState(0);
-  const [stateVariable, setStateVariable] = useState('');
+  // const [stateVariable, setStateVariable] = useState('');
 
 
   function onMouseDownB(e: any) {

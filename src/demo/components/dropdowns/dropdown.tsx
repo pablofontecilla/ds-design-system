@@ -21,10 +21,10 @@ const Dropdown = () => {
   const [open, setOpen] = useState(true);
   const [mobile, setMobile] = useState(false);
 
-  const handleOpen = () => {
-    setOpen(!open);
-    setMobile(!mobile);
-  };
+  // const handleOpen = () => {
+  //   setOpen(!open);
+  //   setMobile(!mobile);
+  // };
 
   return (
     <>

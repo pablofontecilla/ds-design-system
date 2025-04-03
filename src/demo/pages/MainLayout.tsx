@@ -2,26 +2,26 @@ import { useState } from "react";
 import PaneLeft from "./Paneleft";
 
 export default function MainLayout() {
-const [isCentered, setIsCentered] = useState(true);
-  const [isFullLeft, setIsFullLeft] = useState(false);
-  const [isFullRight, setIsFullRight] = useState(false);
-  const [isDragging, setIsDragging] = useState(false);
-  const [leftPanel, setLeftPanel] = useState(null);
-  const [leftPanelWidth, setLeftPanelWidth] = useState(null);
-  const [rightPanel, setRightPanel] = useState(null);
-  const [rightPanelWidth, setRightPanelWidth] = useState(null);
-  const [splitterX, setSplitterX] = useState(0);
+// const [isCentered, setIsCentered] = useState(true);
+//   const [isFullLeft, setIsFullLeft] = useState(false);
+//   const [isFullRight, setIsFullRight] = useState(false);
+//   const [isDragging, setIsDragging] = useState(false);
+//   const [leftPanel, setLeftPanel] = useState(null);
+//   const [leftPanelWidth, setLeftPanelWidth] = useState(null);
+//   const [rightPanel, setRightPanel] = useState(null);
+//   const [rightPanelWidth, setRightPanelWidth] = useState(null);
+//   const [splitterX, setSplitterX] = useState(0);
 
-  function onMouseDownB(e: any) {
-    setIsDragging(true);
-    let pEle = e.target.previousElementSibling;
-    let nEle = e.target.nextElementSibling;
-    setLeftPanel(pEle);
-    setRightPanel(nEle);
-    setLeftPanelWidth(pEle.offsetWidth);
-    setRightPanelWidth(nEle.offsetwidth);
-    setSplitterX(e.pageX);
-  };
+  // function onMouseDownB(e: any) {
+  //   setIsDragging(true);
+  //   let pEle = e.target.previousElementSibling;
+  //   let nEle = e.target.nextElementSibling;
+  //   setLeftPanel(pEle);
+  //   setRightPanel(nEle);
+  //   setLeftPanelWidth(pEle.offsetWidth);
+  //   setRightPanelWidth(nEle.offsetwidth);
+  //   setSplitterX(e.pageX);
+  // };
 
   let leftPaneContent: any = document.querySelector("body")!;
   leftPaneContent.className = "pf-theme pf-theme--dark";
