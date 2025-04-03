@@ -50,7 +50,7 @@ export default function PfPageD() {
 
   };
 
-  const onMouseUp = ((e: any) => [
+  const onMouseUp = (() => [
     setIsDragging(false)
   ]);
 

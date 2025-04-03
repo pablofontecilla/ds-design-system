@@ -18,18 +18,12 @@ const DropdownObject = () => {
 
 
 const Dropdown = () => {
-  const [open, setOpen] = useState(true);
-  const [mobile, setMobile] = useState(false);
-
-  // const handleOpen = () => {
-  //   setOpen(!open);
-  //   setMobile(!mobile);
-  // };
+  // const [open, setOpen] = useState(true);
+  const open = true
 
   return (
     <>
       <div className="ds-dropdown__ctn">
-        {/* <button className="hamburger" onClick={handleOpen}><Hamburger /></button> */}
         {open ? <div className="nav is-mobile"><DropdownObject /></div> : <div className="nav"><DropdownObject /></div>}
       </div>
     </>
