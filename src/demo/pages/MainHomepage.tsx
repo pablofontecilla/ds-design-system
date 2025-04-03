@@ -1,31 +1,5 @@
-import { useState } from "react";
-// import Left from "../splitter/buttons/Left";
-// import Right from "../splitter/buttons/Right";
-// import Center from "../splitter/buttons/Center";
-// import ChildComponent from "../splitter/ChildComponent";
 
 export default function MainHomepage() {
-  // const [isCentered, setIsCentered] = useState(true);
-  // const [isFullLeft, setIsFullLeft] = useState(false);
-  // const [isFullRight, setIsFullRight] = useState(false);
-  // const [isDragging, setIsDragging] = useState(false);
-  // const [leftPanel, setLeftPanel] = useState(null);
-  // const [leftPanelWidth, setLeftPanelWidth] = useState(null);
-  // const [rightPanel, setRightPanel] = useState(null);
-  // const [rightPanelWidth, setRightPanelWidth] = useState(null);
-  // const [splitterX, setSplitterX] = useState(0);
-
-  // function onMouseDownB(e: any) {
-  //   setIsDragging(true);
-  //   let pEle = e.target.previousElementSibling;
-  //   let nEle = e.target.nextElementSibling;
-  //   setLeftPanel(pEle);
-  //   setRightPanel(nEle);
-  //   setLeftPanelWidth(pEle.offsetWidth);
-  //   setRightPanelWidth(nEle.offsetwidth);
-  //   setSplitterX(e.pageX);
-
-  // };
 
   return (
     <div className='ds-main-ctn'>
@@ -56,9 +30,6 @@ export default function MainHomepage() {
           <p className="text-op60">
             If you have comments or want to be notified about coming releases, <a className="txt-size-09" href="mailto:pablorfontecilla@gmail.com?subject=DS Design System">drop me a line.</a>
           </p>
-
-
-
         </div>
       </div>
 
