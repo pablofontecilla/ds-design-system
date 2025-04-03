@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import App from './App.tsx';
 import NotFoundPage from './demo/pages/NotFoundPage.tsx';
 import Homepage from './demo/pages/Homepage.tsx';
+// import { createBrowserRouter } from 'react-router';
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Examples from './demo/pages/Examples.tsx';
 import Layout from './demo/pages/page-flex/PageFlex.tsx';
@@ -31,7 +32,7 @@ const router = createBrowserRouter([
     element: <Layout/>
   },
   {
-    path: '/pages/contact',
+    path: '/pagescontact',
     element: <Contact/>
   },
 ]);

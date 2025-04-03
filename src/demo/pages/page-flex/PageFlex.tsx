@@ -9,13 +9,8 @@ export default function Layout() {
       <div className="ds-page-flex">
         <Header />
         <MenuLeftFixed />
-        {/* <MainLayout /> */}
         <PfPageD />
-
-        
-        {/* <MainLayoutB /> */}
         <FooterFlex />
-       
       </div>
     </>
   )

@@ -1,5 +1,7 @@
 // import { useState } from "react";
 
+import { NavLink } from "react-router";
+
 // type ListItem = {
 //   name: string;
 //   id: number;
@@ -86,6 +88,11 @@ export default function MainExamples() {
         <div className="row">
           <div className="cell">
             <a href="/pages/layout" className="text-op85">Layout</a>
+            <NavLink to="/pages/layout">
+          {/* <button className="ds-btn"> */}
+            Layout
+            {/* </button> */}
+        </NavLink>
           </div>
           <div className="cell three-cols">
             <span><div className="dot transparent"></div></span>
