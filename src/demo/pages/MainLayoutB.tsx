@@ -1,9 +1,8 @@
-import { useState } from "react";
 
 export default function MainWithSplitter() {
   // const [isCentered, setIsCentered] = useState(true);
-  const [isFullLeft, setIsFullLeft] = useState(false);
-  const [isFullRight, setIsFullRight] = useState(false);
+  // const [isFullLeft, setIsFullLeft] = useState(false);
+  // const [isFullRight, setIsFullRight] = useState(false);
   // const [isDragging, setIsDragging] = useState(false);
   // const [leftPanel, setLeftPanel] = useState(null);
   // const [leftPanelWidth, setLeftPanelWidth] = useState(null);
@@ -24,8 +23,8 @@ export default function MainWithSplitter() {
   // };
 
   return (
-    <div className={isFullRight ? "splitter-ctn right-closed" : "splitter-ctn"}>
-      <div id="leftPanel" className={isFullLeft ? "left-panel" : "left-panel"}>
+    <div className="splitter-ctn">
+      <div id="leftPanel" className="left-panel">
         <div>
         </div>
         <div className='content'>
