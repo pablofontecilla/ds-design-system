@@ -1,6 +1,5 @@
 import { useState } from "react";
-// import Home from '../../components/icons/Home';
-// import Hamburger from '../../components/icons/Hamburger';
+
 import { NavLink } from "react-router";
 
 const DropdownObject = () => {
@@ -8,13 +7,10 @@ const DropdownObject = () => {
     <ul className="ds-dropdown">
       <li className="ds-dropdown__list no-margin">
         <NavLink to="/pages/examples">
-          {/* <button className="ds-btn"><Home /></button> */}
           <button className="ds-btn">Overview</button>
         </NavLink>
       </li>
-      {/* <li className="ds-dropdown__list no-margin">
-        <NavLink to="/pages/contact"><button>Contact</button></NavLink>
-      </li> */}
+
     </ul>
   )
 }
@@ -25,10 +21,10 @@ const Dropdown = () => {
   const [open, setOpen] = useState(true);
   const [mobile, setMobile] = useState(false);
 
-  const handleOpen = () => {
-    setOpen(!open);
-    setMobile(!mobile);
-  };
+  // const handleOpen = () => {
+  //   setOpen(!open);
+  //   setMobile(!mobile);
+  // };
 
   return (
     <>
