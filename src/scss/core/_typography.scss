@@ -46,8 +46,8 @@ p, li {
 }
 
 span {
-    font-size: 1rem;
-    font-family: 'Roboto Light';
+    // font-size: 1rem;
+    // font-family: 'Roboto Light';
 }
 
 a {
@@ -95,8 +95,24 @@ ul.small {
     }
 }
 
+.bold {
+    font-family: 'Roboto Bold';
+}
+
 .text-op60 {
     opacity: variables.$op-60;
+}
+
+.text-op50 {
+    opacity: variables.$op-5;
+}
+
+.text-op40 {
+    opacity: variables.$op-4;
+}
+
+.text-op30 {
+    opacity: variables.$op-3;
 }
 
 .text-op75 {
