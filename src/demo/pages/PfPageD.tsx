@@ -73,7 +73,7 @@ export default function PfPageD() {
           <header className='header-level-2'>
             <h4>Pane Left</h4>
           </header>
-          <div className='content d-block'>
+          <div className='content splitter'>
 
             <ul className='text-op60 no-dot'>
               <li>Flex layout with draggable splitter.</li>

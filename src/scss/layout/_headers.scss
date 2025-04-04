@@ -29,6 +29,18 @@
         letter-spacing: 0;
         vertical-align: middle;
       }
+
+      &.mobile {
+        display: none;
+      }
+
+      @media (width <= 1024px) {
+        display: none;
+
+        &.mobile {
+          display: block;
+        }
+      }
     }
   
     .nav {

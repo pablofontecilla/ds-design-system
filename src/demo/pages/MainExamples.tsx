@@ -87,7 +87,7 @@ export default function MainExamples() {
         </div>
         <div className="row">
           <div className="cell">
-            <a href="/pages/layout" className="text-op85">Layout</a>
+            {/* <a href="/pages/layout" className="text-op85">Layout</a> */}
             <NavLink to="/pages/layout">
           {/* <button className="ds-btn"> */}
             Layout

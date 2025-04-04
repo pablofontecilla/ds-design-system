@@ -16,6 +16,9 @@ export default function Header
         React UI Toolkit
         <span className="smallx2 text-op60 p-l-10">v 0.1</span>
       </h1>
+      <h1 className='brand mobile'>
+        UI Toolkit
+      </h1>
       <NavbarTopB />
     </div>
   )
