@@ -3,6 +3,19 @@
 
 @mixin header {
     // background-color: rgba(colors.$black, .1);
+    // background-color: colors.$gray-dark-d-10;
+    // height: 36px;
+    // display: flex;
+    // align-items: center;
+    // width: 100%;
+    // padding: 0 20px;
+    // box-sizing: border-box;
+    // position: fixed;
+    // text-transform: uppercase;
+    // z-index: 10;
+  }
+  
+  .ds-header {
     background-color: colors.$gray-dark-d-10;
     height: 36px;
     display: flex;
@@ -13,10 +26,6 @@
     position: fixed;
     text-transform: uppercase;
     z-index: 10;
-  }
-  
-  .ds-header {
-    @include header;
     border-bottom: 1px solid rgba(colors.$white, .04);
     box-shadow: 0 3px 8px rgba(colors.$black, .1);
   
