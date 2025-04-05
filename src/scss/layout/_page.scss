@@ -2,7 +2,6 @@
 @use '../../scss/core/variables' as variables;
 
 @mixin header {
-  // background-color: rgba(colors.$black, .1);
   background-color: colors.$gray-dark-d-10;
   height: 36px;
   display: flex;
@@ -10,24 +9,37 @@
   width: 100%;
   padding: 0 20px;
   box-sizing: border-box;
-  position: fixed;
+  position: absolute;
   text-transform: uppercase;
   z-index: 12;
 }
 
 .ds-footer {
-  @include header;
+  background-color: colors.$gray-dark-d-10;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: absolute;
+  text-transform: uppercase;
+  z-index: 12;
   bottom: 0;
   border-top: 1px solid rgba(colors.$white, .04);
   box-shadow: 0 -3px 8px rgba(colors.$black, .1);
   z-index: 20;
+
+  @media (width <= 1024px) {
+    position: fixed;
+  }
 }
 
 .ds-main-ctn-rev {
   box-sizing: border-box;
   display: flex;
   height: 100%;
-  margin: 60px 15%;
+  margin: 60px 10px 0 58px;
   flex-direction: column;
 }
 
@@ -48,15 +60,15 @@
 
 .ds-main-ctn {
   box-sizing: border-box;
-  display: flex;
+  // display: flex;
   height: 100%;
 
   .ds-main {
     border-right: 1px solid rgba(colors.$white, .04);
-    display: flex;
+    // display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    // padding: 10px;
     flex: 1;
     flex-direction: column;
   }
@@ -93,7 +105,19 @@
   display: inline-flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0 20px 0 40px;
+  padding: 56px 20%;
+
+  @media (width <= 1024px) {
+    padding: 60px 5px 56px 53px;
+
+    .emphasis {
+      font-size: 2rem;
+    }
+
+  &.splitter {
+    padding: 60px 5px 0 0;
+  }
+  }
 
   &.d-block {
     display: block;
@@ -102,6 +126,10 @@
 
   p {
     padding-left: 20px;
+
+    @media (width <= 1024px) {
+      padding: 0 5px;
+    }
   }
 
   ul {
@@ -112,17 +140,32 @@
   .emphasis {
     line-height: 1;
   }
+
+  &.splitter {
+    display: block;
+  }
 }
 
+
+
 // HOMEPAGE //////////////////////////////
-.homepage-outlined {
+p.homepage-outlined {
   background-color: rgba(colors.$black, .15);
   border-radius: 5px;
   padding: 10px 20px;
-  margin: 10px 20px;
+  margin: 0 20px;
   column-count: 2;
     column-gap: 40px;
     color: rgba(colors.$white, .5);
     font-style: italic;
     font-size: small;
+
+    @media (width <= 1024px) {
+      column-count: 1;
+      // column-gap: 0;
+      // padding: 10px 0;
+      margin: 0;
+      padding-right: 5px;
+      padding: 10px;
+    }
 }
