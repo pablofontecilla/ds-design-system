@@ -1,7 +1,7 @@
 import Header from '../Header'
-import FooterFlex from '../../page/FooterFlex'
 import MenuLeftFixed from '../../page/MenuLeft'
 import PfPageD from '../PfPageD'
+import FooterAbsolute from '../../page/FooterAbsolute'
 
 export default function Layout() {
   return (
@@ -10,7 +10,7 @@ export default function Layout() {
         <Header />
         <MenuLeftFixed />
         <PfPageD />
-        <FooterFlex />
+        <FooterAbsolute />
       </div>
     </>
   )

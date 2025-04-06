@@ -22,8 +22,9 @@ export default function MainHomepage() {
           </p>
           <p className="homepage-outlined">
             Overall personal objective is to revisit & re-examine the building blocks of user interfaces. For most developers, front-end development starts with a UI framework -Bootstrap, Material Design or other; developers are mostly concerned about functional implementation, so they just need a UI framework that works. 
-          </p>
-          <p className="homepage-outlined">
+          {/* </p>
+          <p className="homepage-outlined"> */}
+          <br />
             As a designer I have collaborated in a few projects using Bootstrap, lately React-Bootstrap & I have trained myself customizing it. But every designer dreams starting with a clean sheet, and that is just what I am doing here. For now, it’s published as a playground providing a consistent UI to different projects, and presented as an incomplete set of tools that will grow regularly.
           </p>
           <p className="text-op60">
