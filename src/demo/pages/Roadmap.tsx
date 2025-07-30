@@ -1,15 +1,16 @@
 import Header from './Header'
 import FooterFlex from '../page/FooterFlex'
 import MenuLeftFixed from '../page/MenuLeft'
-import MainHomepage from './MainHomepage'
+import MainExamples from './MainExamples'
 
-export default function Homepage() {
+export default function Roadmap() {
   return (
     <>
       <div className="ds-page-flex">
         <Header />
         <MenuLeftFixed />
-        <MainHomepage />
+        <div>roadmap</div>
+        <MainExamples />
         <FooterFlex />
       </div>
     </>

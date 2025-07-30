@@ -32,11 +32,18 @@ h4 {
     font-size: .9rem;
 }
 
+.small {
+    font-size: .7rem;
+}
+
+.smallx2 {
+    font-size: .6rem;
+}
+
 a.active {
     button {
        color: colors.$strong-blue; 
     }
-
 }
 
 p, li {
@@ -46,13 +53,17 @@ p, li {
 }
 
 span {
-    font-size: 1rem;
-    font-family: 'Roboto Light';
+    // font-size: 1rem;
+    // font-family: 'Roboto Light';
 }
 
 a {
     color: colors.$strong-blue; 
     text-decoration: none;
+
+    &.subdued {
+        color: colors.$strong-blue-subdued;
+    }
 
     &:hover {
         color: colors.$ds-blue-l-x2;
@@ -66,14 +77,6 @@ a {
 
 .txt-size-08 {
     font-size: .8rem;
-}
-
-.small {
-    font-size: .85rem;
-}
-
-.smallx2 {
-    font-size: .7rem;
 }
 
 ul {
@@ -95,8 +98,24 @@ ul.small {
     }
 }
 
+.bold {
+    font-family: 'Roboto Bold';
+}
+
 .text-op60 {
     opacity: variables.$op-60;
+}
+
+.text-op50 {
+    opacity: variables.$op-5;
+}
+
+.text-op40 {
+    opacity: variables.$op-4;
+}
+
+.text-op30 {
+    opacity: variables.$op-3;
 }
 
 .text-op75 {
@@ -112,7 +131,7 @@ ul.small {
 }
 
 .emphasis {
-    font-size:3rem;
+    // font-size:3rem;
     font-weight: 700;
     color: rgba(colors.$ds-blue, .5);
 }

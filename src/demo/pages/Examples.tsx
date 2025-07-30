@@ -1,9 +1,7 @@
 import Header from './Header'
-// import MainFlex from '../page/MainFlex'
 import FooterFlex from '../page/FooterFlex'
 import MenuLeftFixed from '../page/MenuLeft'
-import MainWithSplitter from '../page/MainWithSplitter'
-import MainExamples from './MainExamples'
+import PfPageD from './PfPageD'
 
 export default function Examples() {
   return (
@@ -11,9 +9,7 @@ export default function Examples() {
       <div className="ds-page-flex">
         <Header />
         <MenuLeftFixed />
-        {/* <MainFlex /> */}
-        {/* <MainWithSplitter /> */}
-        <MainExamples />
+        <PfPageD />
         <FooterFlex />
       </div>
     </>

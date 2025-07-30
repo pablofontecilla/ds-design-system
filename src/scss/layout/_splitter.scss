@@ -46,14 +46,16 @@
     z-index: 10;
 }
 
-.splitter-row-ctn {
-    border: 1px solid #ccc;
-}
+// .splitter-row-ctn {
+//     border: 1px solid #ccc;
+// }
 
 .splitter-row {
     width: 2px;
     height: 100%;
     background-color: colors.$gray-dark-l-10;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
     box-sizing: border-box;
     z-index: 10;
     
@@ -61,7 +63,8 @@
     &:hover {
         cursor: ew-resize;
         background-color: colors.$ds-blue-light;
-        // outline: 3px solid colors.$ds-blue-light;
+        border-left: 1px solid colors.$ds-blue-light;
+        border-right: 1px solid colors.$ds-blue-light;
 
     }
 }

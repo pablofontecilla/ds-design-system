@@ -19,8 +19,8 @@ $ds-box-shadow-lt: 0 3px 8px rgba(colors.$black, .15);
 
 // LAYOUT /////////////////////////////
 $ds-header-height: 64px;
-$ds-footer-height: 32px;
-$ds-header-plus-footer: calc(#{$ds-header-height} + #{$ds-footer-height});
+$footer-height: 32px;
+$ds-header-plus-footer: calc(#{$ds-header-height} + #{$footer-height});
 $menu-left-width: 48px;
 
 // MEASURES /////////////////////////////
@@ -36,6 +36,8 @@ $op-80: .8;
 $op-default: .75;
 $op-60: .6;
 $op-5: .5;
+$op-4: .4;
+$op-3: .3;
 $op-disabled: .3;
 
 // TEXT  /////////////////////////////
