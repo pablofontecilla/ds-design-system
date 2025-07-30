@@ -6,7 +6,7 @@ const DropdownObject = () => {
     <ul className="ds-dropdown">
       <li className="ds-dropdown__list no-margin">
         <NavLink to="/pages/examples">
-          <button className="ds-btn">Overview</button>
+          <button className="ds-btn">Roadmap</button>
         </NavLink>
       </li>
 

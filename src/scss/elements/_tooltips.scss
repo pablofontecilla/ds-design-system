@@ -1,0 +1,17 @@
+@use '../../scss/core/colors';
+@use '../../scss/core/variables';
+
+.tooltip {
+    position: absolute;
+    left: 48px;
+    padding: 6px 20px 6px 10px;
+    background-color: colors.$gray-dark-d-6;
+    color: rgba(colors.$white, .6);
+    font-size: .8rem;
+
+
+    &:hover {
+
+    }
+}
+

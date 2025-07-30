@@ -2,6 +2,7 @@ import Header from './Header'
 import FooterFlex from '../page/FooterFlex'
 import MenuLeftFixed from '../page/MenuLeft'
 import MainExamples from './MainExamples'
+import PfPageD from './PfPageD'
 
 export default function Examples() {
   return (
@@ -9,7 +10,7 @@ export default function Examples() {
       <div className="ds-page-flex">
         <Header />
         <MenuLeftFixed />
-        <MainExamples />
+        <PfPageD />
         <FooterFlex />
       </div>
     </>

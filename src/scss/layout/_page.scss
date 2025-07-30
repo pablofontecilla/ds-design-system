@@ -1,21 +1,21 @@
 @use '../../scss/core/colors';
 @use '../../scss/core/variables' as variables;
 
-@mixin header {
-  background-color: colors.$gray-dark-d-10;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 0 20px;
-  box-sizing: border-box;
-  position: absolute;
-  text-transform: uppercase;
-  z-index: 12;
-}
+// @mixin header {
+//     background-color: colors.$gray-dark-d-3;
+//   height: 36px;
+//   display: flex;
+//   align-items: center;
+//   width: 100%;
+//   padding: 0 20px;
+//   box-sizing: border-box;
+//   position: absolute;
+//   text-transform: uppercase;
+//   z-index: 12;
+// }
 
-.ds-footer {
-  background-color: colors.$gray-dark-d-10;
+.footer {
+    background-color: colors.$gray-dark-d-3;
   height: 36px;
   display: flex;
   align-items: center;
@@ -29,6 +29,11 @@
   border-top: 1px solid rgba(colors.$white, .04);
   box-shadow: 0 -3px 8px rgba(colors.$black, .1);
   z-index: 20;
+  justify-content: space-between;
+
+   .footer-right {
+    // border: 1px solid red;
+   }
 
   @media (width <= 1024px) {
     position: fixed;
@@ -110,12 +115,13 @@
   justify-content: center;
   flex-direction: column;
   padding: 56px 20%;
+  font-size: 2rem;
 
   @media (width <= 1024px) {
     padding: 60px 5px 56px 53px;
 
     .emphasis {
-      font-size: 2rem;
+      // font-size: 3rem;
     }
 
   &.splitter {
@@ -142,7 +148,8 @@
   }
 
   .emphasis {
-    line-height: 1;
+    line-height: 3;
+    font-size: 3rem;
   }
 
   &.splitter {
@@ -153,7 +160,9 @@
 
 
 // HOMEPAGE //////////////////////////////
-p.homepage-outlined {
+.homepage-outlined-ctn .homepage-outlined {
+  // display: none;
+
   background-color: rgba(colors.$black, .15);
   border-radius: 5px;
   padding: 10px 20px;
@@ -163,6 +172,7 @@ p.homepage-outlined {
     color: rgba(colors.$white, .5);
     font-style: italic;
     font-size: small;
+    line-height: 2;
 
     @media (width <= 1024px) {
       column-count: 1;

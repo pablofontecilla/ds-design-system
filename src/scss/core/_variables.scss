@@ -19,8 +19,8 @@ $ds-box-shadow-lt: 0 3px 8px rgba(colors.$black, .15);
 
 // LAYOUT /////////////////////////////
 $ds-header-height: 64px;
-$ds-footer-height: 32px;
-$ds-header-plus-footer: calc(#{$ds-header-height} + #{$ds-footer-height});
+$footer-height: 32px;
+$ds-header-plus-footer: calc(#{$ds-header-height} + #{$footer-height});
 $menu-left-width: 48px;
 
 // MEASURES /////////////////////////////

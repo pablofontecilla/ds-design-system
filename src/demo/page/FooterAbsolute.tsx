@@ -1,5 +1,5 @@
 export default function FooterAbsolute() {
   return (
-    <div className="ds-footer absolute"></div>
+    <div className="footer absolute">dddd</div>
   )
 }

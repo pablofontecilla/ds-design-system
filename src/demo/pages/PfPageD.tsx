@@ -76,7 +76,8 @@ export default function PfPageD() {
           <div className='content splitter'>
 
             <ul className='text-op60 no-dot'>
-              <li>Flex layout with draggable splitter.</li>
+              <li>A simple layout using fixed positions</li>
+              {/* <li>Flex layout with draggable splitter.</li> */}
               <li>Components: Header, MenuLeft, Footer, MainSplitter</li>
               <li>MainSplitter: PaneLeft, SplitterCol, PaneRight</li>
             </ul>
@@ -89,11 +90,11 @@ export default function PfPageD() {
             <h4>Pane Right</h4>
           </header>
           <div className='content d-block'>
-          <p className="text-op60">
+          {/* <p className="text-op60">
             PageFlex.tsx
-          </p>
+          </p> */}
 
-          <ul className='text-op60' style={{ marginLeft: "40px" }}>
+          {/* <ul className='text-op60' style={{ marginLeft: "40px" }}>
             <li className='small'>Header.tsx</li>
             <li className='small'>MenuLeft.tsx</li>
             <li>Footer.tsx</li>
@@ -105,7 +106,7 @@ export default function PfPageD() {
               </ul>
               
               </li>
-          </ul>
+          </ul> */}
           </div>
         </div>
       </div>

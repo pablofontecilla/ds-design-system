@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import Examples from './demo/pages/Examples.tsx';
 import Layout from './demo/pages/page-flex/PageFlex.tsx';
 import Contact from './ds/pages/Contact.tsx';
+import PageFlex from './demo/page/PageFlex.tsx';
 
 
 let body: any = document.querySelector("body");
@@ -29,10 +30,14 @@ const router = createBrowserRouter([
   },
   {
     path: '/pages/layout',
-    element: <Layout/>
+    element: <PageFlex/>
   },
   {
-    path: '/pagescontact',
+    path: '/pages/page-flex',
+    element: <PageFlex/>
+  },
+  {
+    path: '/pages/contact',
     element: <Contact/>
   },
 ]);

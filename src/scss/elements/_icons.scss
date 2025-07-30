@@ -1,6 +1,76 @@
 @use '../core/colors';
 @use '../core/variables';
 
+button.btn-icon-menu-left {
+    height: 48px;
+    padding: 0;
+    text-transform: none;
+    transition-delay: 0;
+    // transition-property: opacity;
+    width: 100%;
+    // border: 1px solid red;
+    justify-content: center;
+
+    .tooltip {
+        // display: none;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+        transition-delay: 1s;
+    }
+
+    &:hover {
+
+        .icn-shape {
+            fill: rgba(colors.$white, .4);
+        }
+
+        .icn-shape-03 {
+            fill: rgba(colors.$white, .5);
+        }
+
+        .icn-shape-04 {
+            fill: rgba(colors.$white, .6);
+        }
+
+        .icn-line {
+            stroke: colors.$white;
+        }
+
+        .tooltip {
+            opacity: 1;
+            transition: opacity 0 ease-in-out;
+            transition-delay: 0;
+        }
+    }
+
+    .icn-shape {
+        fill: rgba(colors.$white, .2);
+    }
+
+    .icn-shape-03 {
+        fill: rgba(colors.$white, .3);
+    }
+
+    .icn-shape-04 {
+        fill: rgba(colors.$white, .4);
+    }
+}
+
+.icn-line {
+    stroke: rgba(colors.$white, .5);
+    stroke-width: 1px;
+}
+
+
+
+.icn-menu-left {
+    width: 36px;
+    height: 48px;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+}
+
 .ds-icon {
     width: 16px;
     height: 16px;
@@ -13,25 +83,12 @@
         height: 24px;
     }
 
-    .icn-line {
-        stroke: rgba(colors.$white, .5);
-        stroke-width: 1px;
-    }
-    
-    .icn-shape {
-
-    }
-
     &:hover {
-        .icn-line {
-        }
+        .icn-line {}
 
-
-        .icn-shape--blue {
-        }
+        .icn-shape--blue {}
     }
 }
-
 
 .ds-brand-icon {
     .icn-shape {

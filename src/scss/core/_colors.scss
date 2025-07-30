@@ -1,3 +1,4 @@
+@use "sass:color";
 
 $ds-blue: #4c88a2;
 $ds-blue-light: #58cafc;
@@ -9,8 +10,14 @@ $black: #000;
 $white: #fff;
 
 $gray-dark: #1e1f20;
-$gray-dark-l-10: lighten($gray-dark, 10);
-$gray-dark-d-10: darken($gray-dark, 1);
+// $gray-dark-l-10: lighten($gray-dark, 10);
+$gray-dark-l-10: color.adjust($gray-dark, $lightness: 10%);
+$gray-dark-d-10: darken($gray-dark, 10);
+$gray-dark-d-5: darken($gray-dark, 5);
+// $gray-dark-d-6: darken($gray-dark, 6);
+$gray-dark-d-6: color.adjust($gray-dark, $lightness: -6%);
+$gray-dark-d-3: color.adjust($gray-dark, $lightness: -3%);
+$gray-dark-d-2: color.adjust($gray-dark, $lightness: -2%);
 
 $ds-bg-theme-dark: $gray-dark;
 
@@ -21,3 +28,4 @@ $ds-bg-theme-dark: $gray-dark;
 
 $ds-d-bg-blue06: #1e2224;
 $strong-blue: #87abba;
+$strong-blue-subdued: #658390;

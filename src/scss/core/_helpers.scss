@@ -52,6 +52,10 @@
     padding-left: 30px;
 }
 
+.p-r-10 {
+    padding-right: 10px;
+}
+
 // RIGHT //////////// 
 .p-r-5 {
     padding-right: 5px;
@@ -75,20 +79,20 @@
 }
 
 // LEFT ////////////
-.margin-l-5 {
-    padding-left: 5px;
+.m-l-5 {
+    margin-left: 5px;
 }
 
-.margin-l-10 {
-    padding-left: 10px;
+.m-l-10 {
+    margin-left: 10px;
 }
 
-.margin-l-20 {
-    padding-left: 20px;
+.m-l-20 {
+    margin-left: 20px;
 }
 
-.margin-l-30 {
-    padding-left: 30px;
+.m-l-30 {
+    margin-left: 30px;
 }
 
 // TOP ////////////
@@ -96,8 +100,8 @@
     margin-top: 30px;
 }
 
-.m-t-30 {
-    margin-top: 30px;
+.m-t-50 {
+    margin-top: 50px;
 }
 
 // BOTTOM ////////////
@@ -113,7 +117,7 @@
 }
 
 
-// FLEX /////////////////////////////
+// DISPLAY /////////////////////////////
 .flex {
     display: flex;
     align-items: center;
@@ -126,8 +130,17 @@
     background-color: colors.$ds-blue-l-x;
 }
 
+.display-block {
+    display: block;
+}
+
+.width-full {
+    width: 100%;
+}
 
 // POSITION /////////////////////////////
 .pos-absolute {
     position: absolute;
 }
+
+
