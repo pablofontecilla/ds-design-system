@@ -50,9 +50,9 @@ export default function PfPageD() {
 
   };
 
-  const onMouseUp = (() => [
-    setIsDragging(false)
-  ]);
+  const onMouseUp = () => {
+    setIsDragging(false);
+  };
 
   useEffect(() => {
     if (isDragging) {
