@@ -21,10 +21,11 @@ button {
         text-transform: none;
         font-size: 1rem;
         padding: 0 10px;
+        vertical-align: middle;
     }
 
     &:hover {
-        background-color: rgba(colors.$black, .2);
+        background-color: colors.$gray-dark-d-6;
         color: colors.$ds-blue-l-x2;
         .icn-line {
             stroke: colors.$ds-blue-l-x2;
@@ -40,6 +41,4 @@ button {
         opacity: .35;
         pointer-events: none;
     }
-
-
 }

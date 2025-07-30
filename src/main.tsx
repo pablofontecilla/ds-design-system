@@ -3,11 +3,10 @@ import { createRoot } from 'react-dom/client';
 import App from './App.tsx';
 import NotFoundPage from './demo/pages/NotFoundPage.tsx';
 import Homepage from './demo/pages/Homepage.tsx';
-// import { createBrowserRouter } from 'react-router';
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Examples from './demo/pages/Examples.tsx';
-import Layout from './demo/pages/page-flex/PageFlex.tsx';
 import Contact from './ds/pages/Contact.tsx';
+import Roadmap from './demo/pages/Roadmap.tsx';
 
 
 let body: any = document.querySelector("body");
@@ -28,8 +27,8 @@ const router = createBrowserRouter([
     element: <Examples/>
   },
   {
-    path: '/pages/layout',
-    element: <Layout/>
+    path: '/pages/roadmap',
+    element: <Roadmap/>
   },
   {
     path: '/pages/contact',

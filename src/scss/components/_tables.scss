@@ -21,7 +21,7 @@
         // }
 
         .dot {
-            opacity: .4;
+            opacity: .8;
         }
 
         &.active {
@@ -41,8 +41,18 @@
             display: table-cell;
             padding: 10px 30px;
             border-bottom: variables.$ds-border-l-5;
+
+            @media (width <= 1024px) {
+                padding: 10px 0;
+              }
         }
     }
+    // @media (width <= 1024px) {
+
+    //     .cell {
+    //         padding: 10px 5px;
+    //     }
+    //   }
 }
 
 
