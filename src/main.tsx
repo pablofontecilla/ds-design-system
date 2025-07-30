@@ -3,12 +3,9 @@ import { createRoot } from 'react-dom/client';
 import App from './App.tsx';
 import NotFoundPage from './demo/pages/NotFoundPage.tsx';
 import Homepage from './demo/pages/Homepage.tsx';
-// import { createBrowserRouter } from 'react-router';
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Examples from './demo/pages/Examples.tsx';
-import Layout from './demo/pages/page-flex/PageFlex.tsx';
 import Contact from './ds/pages/Contact.tsx';
-import PageFlex from './demo/page/PageFlex.tsx';
 import Roadmap from './demo/pages/Roadmap.tsx';
 
 
@@ -29,10 +26,6 @@ const router = createBrowserRouter([
     path: '/pages/examples',
     element: <Examples/>
   },
-  // {
-  //   path: '/pages/layout',
-  //   element: <PageFlex/>
-  // },
   {
     path: '/pages/roadmap',
     element: <Roadmap/>
