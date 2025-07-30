@@ -9,6 +9,7 @@ import Examples from './demo/pages/Examples.tsx';
 import Layout from './demo/pages/page-flex/PageFlex.tsx';
 import Contact from './ds/pages/Contact.tsx';
 import PageFlex from './demo/page/PageFlex.tsx';
+import Roadmap from './demo/pages/Roadmap.tsx';
 
 
 let body: any = document.querySelector("body");
@@ -28,13 +29,13 @@ const router = createBrowserRouter([
     path: '/pages/examples',
     element: <Examples/>
   },
+  // {
+  //   path: '/pages/layout',
+  //   element: <PageFlex/>
+  // },
   {
-    path: '/pages/layout',
-    element: <PageFlex/>
-  },
-  {
-    path: '/pages/page-flex',
-    element: <PageFlex/>
+    path: '/pages/roadmap',
+    element: <Roadmap/>
   },
   {
     path: '/pages/contact',

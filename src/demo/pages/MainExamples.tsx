@@ -73,7 +73,7 @@ export default function MainExamples() {
 
   return (
     <><div className="ds-main-ctn-rev">
-      <div className="text-op60 m-b-20">Release Date: April 30, 2024</div>
+      {/* <div className="text-op60 m-b-20">Release Date: April 30, 2024</div> */}
       <div className="flex-table projects-list">
         <div className="row">
           <div className="cell">
