@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router";
 import IcnComponents from "../../assets/svg/IcnComponents";
 import IcnElements from "../../assets/svg/IcnElements";
 import IcnLayout from "../../assets/svg/IcnLayout";

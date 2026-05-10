@@ -1,0 +1,104 @@
+@use "sass:color";
+
+@use '../../core/colors';
+@use '../../core/variables';
+
+
+.menu-layout {
+    display: block;
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+    align-self: flex-start;
+    z-index: 11;
+
+    &:hover {
+        transition: all cubic-bezier(0.23, 1, 0.320, 1);
+
+        .menu-layout-label .icn-line {
+            // background-color: color.adjust(colors.$gray-dark, $lightness: -3%);
+            stroke: colors.$ds-blue-light;
+        }
+
+        button {
+            background-color: color.adjust(colors.$gray-dark, $lightness: -3%);
+            color: colors.$ds-blue-l-x2;
+        }
+
+        .menu-list {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .menu-list {
+        z-index: 1;
+        display: none;
+        background-color: color.adjust(colors.$gray-dark, $lightness: -3%);
+        ;
+        border-bottom: variables.$border-default;
+        border-left: variables.$border-default;
+        border-right: variables.$border-default;
+        transition: all .2s ease-out;
+        margin: 0;
+    }
+
+    .menu-item {
+        margin: 0;
+
+        // a.active button {
+        //     background-color: transparent;
+        //     filter: grayscale(100%) sepia(100%);
+        //     pointer-events: none;
+        //     cursor: default;
+
+        // }
+
+        a.active {
+            cursor: default;
+
+            button {
+                background-color: transparent;
+                color: colors.$ds-blue;
+                filter: grayscale(100%) sepia(100%);
+                pointer-events: none;
+                cursor: default;
+            }
+        }
+
+        button {
+            color: rgba(colors.$white, $alpha: .5);
+            background-color: transparent;
+            text-transform: uppercase;
+            width: 100%;
+            white-space: nowrap;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 0.6rem;
+            border: none;
+
+            &:hover {
+                background-color: rgba(colors.$white, .05);
+                color: rgba(colors.$white, .9);
+            }
+        }
+    }
+
+    .menu-layout-label {
+        height: 24px;
+        z-index: 11;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        button {
+            cursor: pointer;
+            padding: 0;
+            width: 36px;
+            height: 20px;
+            justify-content: center;
+        }
+    }
+}

@@ -1,6 +1,6 @@
 import HeaderTop from './Header';
 import FooterFlex from '../page/FooterFlex'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 export default function NotFoundPage() {
 
     return (

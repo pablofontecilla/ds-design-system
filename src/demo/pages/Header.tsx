@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router";
 import DsIcon from "../components/icons/DsIcon";
 import NavbarTopB from "./NavbarTopB";
 
