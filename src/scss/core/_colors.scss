@@ -18,6 +18,7 @@ $gray-dark-d-5: darken($gray-dark, 5);
 $gray-dark-d-6: color.adjust($gray-dark, $lightness: -6%);
 $gray-dark-d-3: color.adjust($gray-dark, $lightness: -3%);
 $gray-dark-d-2: color.adjust($gray-dark, $lightness: -2%);
+$hover-bg: $ds-blue-light;
 
 $ds-bg-theme-dark: $gray-dark;
 

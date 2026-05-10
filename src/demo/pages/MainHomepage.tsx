@@ -24,14 +24,12 @@ export default function MainHomepage() {
             <span className="text-op30 p-r-20 bold">2</span>
             <span className="text-op60">Evolve it into a full fledged Design System.</span>
           </p>
-          <p className="text-op60">
+          {/* <p className="text-op60">
             For now, an incomplete set of tools that will grow regularly. 
 
             <button className="btn-text m-l-20" onClick={toggleVisibility}>{isVisible ? 'Less' : 'More'}
-             {/* <a className="subdued p-l-20">More</a>  */}
             </button>
-            
-          </p>
+          </p> */}
           {isVisible && (
             <p className="homepage-outlined-ctn">
               <p className="homepage-outlined">

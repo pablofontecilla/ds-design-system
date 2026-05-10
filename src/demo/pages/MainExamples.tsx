@@ -2,51 +2,6 @@
 
 import { NavLink } from "react-router";
 
-// type ListItem = {
-//   name: string;
-//   id: number;
-//   isActive: boolean;
-//   release?: string[];
-// };
-
-// const listItems: ListItem[] = [
-//   {
-//     name: "Layout",
-//     id: 1,
-//     isActive: true,
-//     release: ["Dev"]
-//   },
-//   {
-//     name: "Dropdowns",
-//     id: 2,
-//     isActive: false,
-//     release: [""]
-//   },
-//   {
-//     name: "Buttons",
-//     id: 3,
-//     isActive: false,
-//     release: [""]
-//   },
-//   {
-//     name: "Inputs",
-//     id: 4,
-//     isActive: false,
-//     release: [""]
-//   },
-//   {
-//     name: "Accordeon",
-//     id: 5,
-//     isActive: false,
-//     release: [""]
-//   },
-//   {
-//     name: "Modals",
-//     id: 6,
-//     isActive: false,
-//     release: [""]
-//   }
-// ]
 
 export default function MainExamples() {
   // const [isCentered, setIsCentered] = useState(true);
