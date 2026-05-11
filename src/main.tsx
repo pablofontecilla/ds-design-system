@@ -37,6 +37,10 @@ const router = createBrowserRouter([
     element: <PageTest/>
   },
   {
+    path: './demo/pages/test2',
+    element: <PageTest/>
+  },
+  {
     path: '/pages/scrolling',
     element: <PageScrolling/>
   },
