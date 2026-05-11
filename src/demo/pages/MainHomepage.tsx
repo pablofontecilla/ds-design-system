@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import { NavLink } from 'react-router';
 
 export default function MainHomepage() {
   const [isVisible, setIsVisible] = useState(false); // Initial state: hidden
@@ -42,7 +43,11 @@ export default function MainHomepage() {
           )}
 
           <p className="text-op60 m-t-50">
-            Latest addition:  <a href="github.com/pablofontecilla/ds-design-system"> Layout</a>
+            Latest addition:  
+            <NavLink to="/pages/examples"> Layout</NavLink>
+            {/* <a href="github.com/pablofontecilla/ds-design-system"> 
+            Layout
+            </a> */}
           </p>
           <p className="text-op60">
             Repository: <a href="github.com/pablofontecilla/ds-design-system">github.com/pablofontecilla/ds-design-system</a>

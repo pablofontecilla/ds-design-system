@@ -8,6 +8,7 @@ import shortid from 'shortid';
 import useIntersectionObserver from './PageScrolling/UseIntersectionObserver';
 import SectionC from './PageScrolling/SectionC';
 import { observe } from 'react-intersection-observer';
+import gsap from 'gsap';
 
 
 // const sections = document.querySelectorAll('.section');
@@ -62,10 +63,51 @@ const sections = [
     <>
       <div className="ds-page-flex">
         <Header />
-        <div className='sections-ctn' id="scrollArea">
-          <section className="section sectionA show"><SectionA /></section>
-          <section className="section sectionB"><SectionB /></section>
-          <section  className="section sectionC"><SectionC /></section>
+        <div className='sections-ctn'>
+          <section className="section section-a">
+            {/* <div className="top">
+          <div className="intro-ctn intro-ctn-a">
+              <h1 id="introA" className="h1-homepage">
+                <div className='intro-a-btn-list'>
+                  <span className='intro-btn-list-text'>Time machines</span>
+                  <span className='intro-btn-list-label'></span>
+                </div>
+                <span className="intro-btn-separator">.</span>
+                <div className='intro-a-btn-list'>
+                  <span className='intro-btn-list-text'>Clocks 3D</span>
+                  <span className='intro-btn-list-label'></span>
+                </div>
+              </h1>
+              <br />
+
+              <h1 id="introB" className="h1-homepage">
+
+                <div className='intro-a-btn-list'>
+                  <span className='intro-btn-list-text'>Horizontal revolving doors</span>
+                  <span className='intro-btn-list-label'></span>
+                </div>
+                <span className="intro-btn-separator">.</span>
+                <div className='intro-a-btn-list'>
+                  <span className='intro-btn-list-text'>Need an invention?</span>
+                  <span className='intro-btn-list-label'></span>
+                </div>
+              </h1>
+              <br />
+
+              <h1 id="introC" className="h1-homepage">
+                <div className='intro-a-btn-list tooltip'>
+                  <span className="tooltiptext">Under construction</span>
+                  <span className='intro-btn-list-text inactive-b'>And more</span>
+                </div>
+              </h1>
+
+            </div>
+          
+        </div> */}
+            <SectionA />
+            </section>
+          <section className="section section-b"><SectionB /></section>
+          <section  className="section section-c"><SectionC /></section>
 
         </div>
 
@@ -75,12 +117,19 @@ const sections = [
   )
 }
 
-// function importView(componentName: string) {
-//   const componentMap: { [key: string]: React.ComponentType<any> } = {
-//     // BoxesArtists: lazy(() => import('./drawer-right/ArtBoxes')),
-//     // ArtCabinetsB: lazy(() => import('./drawer-right/ArtCabinets-B')),
-//     // SectionB: lazy(() => import('./homepage/SectionB')),
-//   };
-//   // alert(componentName)
-//   return componentMap[componentName] || null;
-// }
+function moveIntroA() {
+  gsap.to("#introA", { translateX:  '100px', opacity: 1, duration: 1, ease: "power4.out" });
+}
+function moveIntroB() {
+  gsap.to("#introB", { translateX:  '100px', opacity: 1, duration: 1, ease: "power4.out" });
+}
+function moveIntroC() {
+  gsap.to("#introC", { translateX:  '100px', opacity: 1, duration: 1, ease: "power4.out" });
+}
+
+window.addEventListener("load", () => {
+  // gsap.to("#introA", { x: 0, opacity: 1, duration: 1, ease: "power4.out" });
+  gsap.delayedCall(.2, moveIntroA);
+  gsap.delayedCall(.5, moveIntroB);
+  gsap.delayedCall(.9, moveIntroC);
+});
