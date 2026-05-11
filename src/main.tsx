@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import Examples from './demo/pages/Examples.tsx';
 import Contact from './ds/pages/Contact.tsx';
 import Roadmap from './demo/pages/Roadmap.tsx';
+import PageScrolling from './demo/pages/PageScrolling.tsx';
 
 
 let body: any = document.querySelector("body");
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: '/pages/examples',
     element: <Examples/>
+  },
+  {
+    path: '/pages/scrolling',
+    element: <PageScrolling/>
   },
   {
     path: '/pages/roadmap',

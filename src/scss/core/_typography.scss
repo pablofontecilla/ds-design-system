@@ -1,6 +1,11 @@
 @use '_colors';
 @use 'variables';
 
+.active {
+    color: colors.$ds-blue;
+     filter: grayscale(100%) sepia(100%);
+}
+
 body    {
     font-size: .8rem;
     font-family: "Lato Regular";

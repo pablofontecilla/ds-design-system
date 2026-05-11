@@ -3,18 +3,15 @@ import React, { useState, useEffect } from 'react';
 import Left from './split-rev/buttons/Left';
 import Center from './split-rev/buttons/Center';
 import Right from './split-rev/buttons/Right';
+import MenuLayout from '../components/dropdowns/MenuLayout';
 
 export default function PfPageD() {
-  // const [isCentered, setIsCentered] = useState(true);
-  // const [isFullLeft, setIsFullLeft] = useState(false);
-  // const [isFullRight, setIsFullRight] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
   const [leftPanel, setLeftPanel] = useState<HTMLElement | null>(null);
   const [leftPanelWidth, setLeftPanelWidth] = useState<number | null>(null);
   const [rightPanel, setRightPanel] = useState<HTMLElement | null>(null);
   const [rightPanelWidth, setRightPanelWidth] = useState(null);
   const [splitterX, setSplitterX] = useState(0);
-  // const [stateVariable, setStateVariable] = useState('');
 
 
   function onMouseDownB(e: any) {
@@ -50,9 +47,9 @@ export default function PfPageD() {
 
   };
 
-  const onMouseUp = (() => [
-    setIsDragging(false)
-  ]);
+  const onMouseUp = () => {
+    setIsDragging(false);
+  };
 
   useEffect(() => {
     if (isDragging) {
@@ -71,7 +68,12 @@ export default function PfPageD() {
       <div className="splitter-ctn">
         <div id="leftPanel" className="left-panel">
           <header className='header-level-2'>
-            <h4>Pane Left</h4>
+            <h4>
+              <span className='label p-r-10'> Layout</span>
+          <span className="intro-btn-separator">.</span>
+          <span className='label p-l-10 active'>Splitter</span>
+            </h4>
+            <MenuLayout />
           </header>
           <div className='content splitter'>
 

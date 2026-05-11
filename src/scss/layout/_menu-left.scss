@@ -1,6 +1,7 @@
 @use '../../scss/core/colors';
 @use '../../scss/core/variables';
 
+
 .ds-menu-left {
     border-right: 1px solid rgba(colors.$white, .07);
     background-color: rgba(colors.$black, .1);
@@ -13,12 +14,27 @@
     box-sizing: border-box;
     box-shadow: 3px 3px 8px rgba(colors.$black, .15);
     z-index: 11;
+    padding-top: 36px;
   
     div {
     //   writing-mode: vertical-rl;
     //   text-orientation: upright;
     //   display: inline-block;
-      margin: auto;
+    //   margin: auto;
+    }
+    a.active {
+            filter: grayscale(100%) sepia(100%);
+        button {
+            background-color: rgba(colors.$black, .5);
+            .icn-shape {
+                fill: rgba(colors.$white, .4);
+            // filter: grayscale(100%) sepia(100%);
+            }
+        }
+
+        // .icn-shape {
+        //     filter: grayscale(100%) sepia(100%);
+        // }
     }
   }
 
@@ -35,7 +51,7 @@
 .ds-menu-btn {
 
     &:hover {
-        background-color: rgba(colors.$red, .2);
+        // background-color: rgba(colors.$red, .2);
 
         .ds-tooltip {
             display: block;
@@ -47,11 +63,11 @@
     }
 
     &.active {
-        background-color: rgba(colors.$red, .2);
+        // background-color: rgba(colors.$red, .2);
 
-        .ds-svg-icon {
-            filter: grayscale(100%) sepia(100%);
-        }
+        // .ds-svg-icon {
+        //     filter: grayscale(100%) sepia(100%);
+        // }
     }
 
     .ds-icon {

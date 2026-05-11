@@ -1,12 +1,13 @@
 
 import { useState } from 'react';
+import { NavLink } from 'react-router';
 
 export default function MainHomepage() {
-  const [isVisible, setIsVisible] = useState(false); // Initial state: hidden
-  const toggleVisibility = () => {
-    setIsVisible(!isVisible); // Toggle visibility state
-    console.log('Toggling visibility: ', isVisible);
-  };
+  const [isVisible] = useState(false); // Initial state: hidden
+  // const toggleVisibility = () => {
+  //   setIsVisible(!isVisible); // Toggle visibility state
+  //   console.log('Toggling visibility: ', isVisible);
+  // };
 
   return (
     <div className='ds-main-ctn'>
@@ -24,14 +25,12 @@ export default function MainHomepage() {
             <span className="text-op30 p-r-20 bold">2</span>
             <span className="text-op60">Evolve it into a full fledged Design System.</span>
           </p>
-          <p className="text-op60">
+          {/* <p className="text-op60">
             For now, an incomplete set of tools that will grow regularly. 
 
             <button className="btn-text m-l-20" onClick={toggleVisibility}>{isVisible ? 'Less' : 'More'}
-             {/* <a className="subdued p-l-20">More</a>  */}
             </button>
-            
-          </p>
+          </p> */}
           {isVisible && (
             <p className="homepage-outlined-ctn">
               <p className="homepage-outlined">
@@ -44,7 +43,8 @@ export default function MainHomepage() {
           )}
 
           <p className="text-op60 m-t-50">
-            Latest addition:  <a href="github.com/pablofontecilla/ds-design-system"> Layout</a>
+            Latest addition:  
+            <NavLink to="/pages/examples"> Layout</NavLink>
           </p>
           <p className="text-op60">
             Repository: <a href="github.com/pablofontecilla/ds-design-system">github.com/pablofontecilla/ds-design-system</a>
