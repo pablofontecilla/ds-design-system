@@ -4,10 +4,10 @@ import { NavLink } from 'react-router';
 
 export default function MainHomepage() {
   const [isVisible, setIsVisible] = useState(false); // Initial state: hidden
-  const toggleVisibility = () => {
-    setIsVisible(!isVisible); // Toggle visibility state
-    console.log('Toggling visibility: ', isVisible);
-  };
+  // const toggleVisibility = () => {
+  //   setIsVisible(!isVisible); // Toggle visibility state
+  //   console.log('Toggling visibility: ', isVisible);
+  // };
 
   return (
     <div className='ds-main-ctn'>
@@ -45,9 +45,6 @@ export default function MainHomepage() {
           <p className="text-op60 m-t-50">
             Latest addition:  
             <NavLink to="/pages/examples"> Layout</NavLink>
-            {/* <a href="github.com/pablofontecilla/ds-design-system"> 
-            Layout
-            </a> */}
           </p>
           <p className="text-op60">
             Repository: <a href="github.com/pablofontecilla/ds-design-system">github.com/pablofontecilla/ds-design-system</a>

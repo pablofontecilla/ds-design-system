@@ -1,13 +1,13 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import Header from './Header'
 import FooterFlex from '../page/FooterFlex'
 import SectionA from './PageScrolling/SectionA'
 import SectionB from './PageScrolling/SectionB'
-import shortid from 'shortid';
+// import shortid from 'shortid';
 
-import useIntersectionObserver from './PageScrolling/UseIntersectionObserver';
+// import useIntersectionObserver from './PageScrolling/UseIntersectionObserver';
 import SectionC from './PageScrolling/SectionC';
-import { observe } from 'react-intersection-observer';
+// import { observe } from 'react-intersection-observer';
 import gsap from 'gsap';
 
 
@@ -29,14 +29,14 @@ const callback = () => {
 
 }
 
-export default function PageScrolling({ componentsToShow }: { componentsToShow: string[] }) {
+export default function PageScrolling() {
 
 
-const sections = [
-  { id: 'sectionA', ref: useRef<HTMLDivElement | null>(null) },
-  { id: 'sectionB', ref: useRef<HTMLDivElement | null>(null) },
-  { id: 'sectionC', ref: useRef<HTMLDivElement | null>(null) },
-];
+// const sections = [
+//   { id: 'sectionA', ref: useRef<HTMLDivElement | null>(null) },
+//   { id: 'sectionB', ref: useRef<HTMLDivElement | null>(null) },
+//   { id: 'sectionC', ref: useRef<HTMLDivElement | null>(null) },
+// ];
 
 // const sections = document.querySelectorAll('.section');
 
