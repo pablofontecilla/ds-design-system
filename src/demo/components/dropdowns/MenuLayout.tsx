@@ -49,7 +49,7 @@ export default function MenuLayout() {
             url: 'demo/pages/test'
         }
     ];
-
+// root directory changed from empty to ./
 
     return (
     <div className="menu-layout">
