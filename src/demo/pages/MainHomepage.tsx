@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { NavLink } from 'react-router';
 
 export default function MainHomepage() {
-  const [isVisible, setIsVisible] = useState(false); // Initial state: hidden
+  const [isVisible] = useState(false); // Initial state: hidden
   // const toggleVisibility = () => {
   //   setIsVisible(!isVisible); // Toggle visibility state
   //   console.log('Toggling visibility: ', isVisible);
