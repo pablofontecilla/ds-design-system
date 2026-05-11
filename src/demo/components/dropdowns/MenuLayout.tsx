@@ -37,6 +37,11 @@ export default function MenuLayout() {
             key: 3,
             name: 'Portfolio page',
             url: '/page/art-cabinets'
+        },
+        {
+            key: 4,
+            name: 'Test page',
+            url: '/demo/pages/test'
         }
     ];
 
