@@ -46,7 +46,7 @@ export default function MenuLayout() {
         {
             key: 5,
             name: 'Test page2',
-            url: './demo/pages/test'
+            url: 'demo/pages/test'
         }
     ];
 
