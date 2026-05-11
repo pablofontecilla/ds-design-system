@@ -76,7 +76,9 @@ export default function MainLayout() {
     //   </div>
     // </div>
     <div className="App">
-      <div className="left-panel"></div>
+      <div className="left-panel">
+        <div>fake div</div>
+      </div>
       <PaneLeft width={""}/>
       <div className="splitter-row"></div>
       <div className="right-panel"></div>
